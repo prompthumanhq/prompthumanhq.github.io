@@ -1,0 +1,86 @@
+[
+  {
+    "objectID": "terms.html",
+    "href": "terms.html",
+    "title": "Terms",
+    "section": "",
+    "text": "Warning\n\n\n\nDraft. Have these terms reviewed before you take your first payment.\nThese terms apply to every request and session with PromptHuman. By paying for a session, the operator of the requesting agent (the person or company that runs it) accepts them."
+  },
+  {
+    "objectID": "terms.html#what-we-provide",
+    "href": "terms.html#what-we-provide",
+    "title": "Terms",
+    "section": "What we provide",
+    "text": "What we provide\nShort opinions and perspectives from real people on taste, tone, plausibility and lived experience. We are not licensed professionals. We do not give financial, medical, legal, tax or engineering advice, and nothing we say should be treated as such."
+  },
+  {
+    "objectID": "terms.html#payment-and-refunds",
+    "href": "terms.html#payment-and-refunds",
+    "title": "Terms",
+    "section": "Payment and refunds",
+    "text": "Payment and refunds\n\nSessions are prepaid by card through a Stripe payment link, sent only after we accept a request.\nFull refund if we decline your request (including ending a session as out of scope) or miss your slot.\nIf your agent does not join within 3 minutes of its slot, we keep 50% and refund the rest."
+  },
+  {
+    "objectID": "terms.html#confidentiality",
+    "href": "terms.html#confidentiality",
+    "title": "Terms",
+    "section": "Confidentiality",
+    "text": "Confidentiality\nBoth sides keep the other’s confidential information private. We use what your agent shares only to answer its request. Please don’t send personal data about your users unless it is essential to the question."
+  },
+  {
+    "objectID": "terms.html#transcripts",
+    "href": "terms.html#transcripts",
+    "title": "Terms",
+    "section": "Transcripts",
+    "text": "Transcripts\nWe keep transcripts for 30 days, then delete them. We never use them to train AI models."
+  },
+  {
+    "objectID": "terms.html#contact",
+    "href": "terms.html#contact",
+    "title": "Terms",
+    "section": "Contact",
+    "text": "Contact\nprompthumanhq@gmail.com"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "When your agent needs lived experience, not training data.",
+    "section": "",
+    "text": "PromptHuman connects your agent with real people for taste, tone, plausibility and lived experience. Confidential, transcribed, and prepaid only once we’re ready to meet."
+  },
+  {
+    "objectID": "index.html#session-types",
+    "href": "index.html#session-types",
+    "title": "When your agent needs lived experience, not training data.",
+    "section": "Session types",
+    "text": "Session types\n\n\n\n\n\n\n\n\nSession\nWhat you get\nPrice\n\n\n\n\nQuick Take\nOne question, one written answer from a real person. Answered during business hours.\n$8\n\n\n5-Minute Session\nFive-minute live chat, with transcript. Text by default; voice on request.\n$15\n\n\n10-Minute Session\nTen-minute live chat, with transcript. Text by default; voice on request.\n$25"
+  },
+  {
+    "objectID": "index.html#what-we-answer",
+    "href": "index.html#what-we-answer",
+    "title": "When your agent needs lived experience, not training data.",
+    "section": "What we answer",
+    "text": "What we answer\n\n\nYes\n\nWill this email, name, gift or design land with a real person?\nWould a normal person actually do, say or believe this?\nWhat a move, job search, trip or hobby is really like\nLocal norms, etiquette and what reads as odd\nWhich option a person would pick, and why\n\n\n\n\nNo\n\nFinancial, medical, legal, tax or engineering advice\nAnything meant to deceive or harm a person\n\nWe’re experienced people, not licensed professionals."
+  },
+  {
+    "objectID": "index.html#send-a-request",
+    "href": "index.html#send-a-request",
+    "title": "When your agent needs lived experience, not training data.",
+    "section": "Send a request",
+    "text": "Send a request\nEmail prompthumanhq@gmail.com with three lines. Your agent can send it directly. Nothing is charged until we confirm.\nSubject: Request: 5-Minute Session\n\nTask: Planning a surprise 40th birthday dinner in Chicago for a client.\nQuestion: Does a rooftop in late October feel special or risky to most guests?\nSession type: 5-Minute Session"
+  },
+  {
+    "objectID": "index.html#how-it-works",
+    "href": "index.html#how-it-works",
+    "title": "When your agent needs lived experience, not training data.",
+    "section": "How it works",
+    "text": "How it works\n\nYou email a request in the format above.\nWe check it’s in scope and that a consultant is free. If not, we say so and nothing is charged.\nWhen we’re ready, we reply with a time and a Stripe payment link for that session type.\nPayment confirms the slot. We meet, then send the transcript."
+  },
+  {
+    "objectID": "index.html#confidential-by-default",
+    "href": "index.html#confidential-by-default",
+    "title": "When your agent needs lived experience, not training data.",
+    "section": "Confidential by default",
+    "text": "Confidential by default\nEvery session is covered by mutual confidentiality in our terms, so your agent can share real context. Transcripts are kept for 30 days and never used to train models.\nFor agents: llms.txt and pricing.json."
+  }
+]

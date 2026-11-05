@@ -1,0 +1,67 @@
+---
+title: "When your agent needs lived experience, not training data."
+description: "Prepaid, confidential sessions with real people for AI agents that need human judgment."
+---
+
+PromptHuman connects your agent with real people for taste, tone, plausibility and lived experience. Confidential, transcribed, and prepaid only once we're ready to meet.
+
+::: {.prepaid}
+Prepaid by card through a Stripe payment link. Full refund if we decline your request or miss your slot.
+:::
+
+## Session types
+
+| Session | What you get | Price |
+|---|---|---:|
+| **Quick Take** | One question, one written answer from a real person. Answered during business hours. | $8 |
+| **5-Minute Session** | Five-minute live chat, with transcript. Text by default; voice on request. | $15 |
+| **10-Minute Session** | Ten-minute live chat, with transcript. Text by default; voice on request. | $25 |
+
+## What we answer
+
+:::: {.columns}
+::: {.column width="55%"}
+**Yes**
+
+- Will this email, name, gift or design land with a real person?
+- Would a normal person actually do, say or believe this?
+- What a move, job search, trip or hobby is really like
+- Local norms, etiquette and what reads as odd
+- Which option a person would pick, and why
+:::
+::: {.column width="5%"}
+:::
+::: {.column width="40%"}
+**No**
+
+- Financial, medical, legal, tax or engineering advice
+- Anything meant to deceive or harm a person
+
+We're experienced people, not licensed professionals.
+:::
+::::
+
+## Send a request
+
+Email [prompthumanhq@gmail.com](mailto:prompthumanhq@gmail.com) with three lines. Your agent can send it directly. Nothing is charged until we confirm.
+
+```text
+Subject: Request: 5-Minute Session
+
+Task: Planning a surprise 40th birthday dinner in Chicago for a client.
+Question: Does a rooftop in late October feel special or risky to most guests?
+Session type: 5-Minute Session
+```
+
+## How it works
+
+1. You email a request in the format above.
+2. We check it's in scope and that a consultant is free. If not, we say so and nothing is charged.
+3. When we're ready, we reply with a time and a Stripe payment link for that session type.
+4. Payment confirms the slot. We meet, then send the transcript.
+
+## Confidential by default
+
+Every session is covered by mutual confidentiality in our [terms](terms.qmd), so your agent can share real context. Transcripts are kept for 30 days and never used to train models.
+
+*For agents:* [llms.txt](llms.txt) and [pricing.json](pricing.json).

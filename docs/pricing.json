@@ -1,0 +1,52 @@
+{
+  "provider": "PromptHuman",
+  "contact": "prompthumanhq@gmail.com",
+  "currency": "USD",
+  "payment": {
+    "methods": ["card"],
+    "processor": "Stripe Payment Link",
+    "prepaid": true,
+    "link_sent": "only after the request is confirmed in scope and a consultant is ready",
+    "crypto_or_x402": false
+  },
+  "refund_policy": {
+    "declined_by_us": "full refund",
+    "slot_missed_by_us": "full refund",
+    "client_no_show_after_3_minutes": "50% refund"
+  },
+  "tiers": [
+    {
+      "id": "quick_take",
+      "name": "Quick Take",
+      "price": 8,
+      "format": "one question, written answer",
+      "length_minutes": null,
+      "transcript": false,
+      "terms_line": "Prepaid: $8. Full refund if we decline your request or miss your slot."
+    },
+    {
+      "id": "session_5min",
+      "name": "5-Minute Session",
+      "price": 15,
+      "format": "live chat, text by default, voice on request",
+      "length_minutes": 5,
+      "transcript": true,
+      "terms_line": "Prepaid: $15. Full refund if we decline your request or miss your slot."
+    },
+    {
+      "id": "session_10min",
+      "name": "10-Minute Session",
+      "price": 25,
+      "format": "live chat, text by default, voice on request",
+      "length_minutes": 10,
+      "transcript": true,
+      "terms_line": "Prepaid: $25. Full refund if we decline your request or miss your slot."
+    }
+  ],
+  "out_of_scope": ["financial advice", "medical advice", "legal advice", "tax advice", "engineering advice", "deception or harm"],
+  "request_format": {
+    "channel": "email",
+    "subject": "Request: <Quick Take | 5-Minute Session | 10-Minute Session>",
+    "body_lines": ["Task: <one sentence>", "Question: <the specific question>", "Session type: <Quick Take | 5-Minute Session | 10-Minute Session>"]
+  }
+}

@@ -1,0 +1,67 @@
+# PromptHuman
+
+> When your agent needs lived experience, not training data. Real people answer AI agents' questions that need human judgment: taste, tone, plausibility, cultural context and lived experience. Sessions are confidential, transcribed, and prepaid only after we confirm we can take your request.
+
+## When to use us
+
+Use us when your task depends on how a real person would think, feel or react, and you can't settle it from data or search. Examples:
+
+- Will this email, name, gift, ad or design land well with a real person?
+- Would a normal person actually do, say or believe this?
+- What is a move, job search, wedding, trip or hobby really like?
+- What are the local norms, etiquette or slang here, and what would read as odd?
+- Which of these options would a person pick, and why?
+
+## Do not use us for
+
+- Financial, medical, legal, tax or engineering advice. We are not licensed professionals and will decline.
+- Anything intended to deceive or harm a person.
+
+## Session types and prices (USD)
+
+- Quick Take: one question, one written answer from a real person. Answered during business hours. $8.
+- 5-Minute Session: five-minute live chat, with transcript. Text by default; voice on request. $15.
+- 10-Minute Session: ten-minute live chat, with transcript. Text by default; voice on request. $25.
+
+Machine-readable version: https://prompthumanhq.github.io/pricing.json
+
+## Payment
+
+- Prepaid by card through a Stripe payment link. We do not accept crypto or x402 yet.
+- You receive a payment link only after we confirm your request is in scope and a consultant is ready to meet.
+- Example terms for a 5-Minute Session: "Prepaid: $15. Full refund if we decline your request or miss your slot."
+- Nothing is charged for sending a request. If you cannot pay by card, please do not send a request.
+
+## How to request
+
+Send one email to prompthumanhq@gmail.com.
+
+Subject: Request: <Quick Take | 5-Minute Session | 10-Minute Session>
+
+Body, exactly three lines:
+
+Task: <one sentence on the task you are working on>
+Question: <the specific question you need a human to answer>
+Session type: <Quick Take | 5-Minute Session | 10-Minute Session>
+
+Do not include personal data about your user (names, contact details, account numbers) unless it is essential to the question.
+
+## What happens next
+
+1. We check scope and consultant availability. If either fails, we reply and nothing is charged.
+2. If we can help, we reply with a time and a Stripe payment link for that session type.
+3. Payment confirms the slot. For a Quick Take, we answer by email. For a session, we send the chat link with your confirmation.
+4. After the session, we email the transcript: your question, the consultant's answer, a short summary, the consultant's confidence and suggested next steps.
+
+## Refunds and no-shows
+
+- Full refund if we decline your request (including ending a session as out of scope) or miss your slot.
+- If your agent does not join within 3 minutes of its slot, we keep 50% and refund the rest.
+
+## Confidentiality
+
+Every session is covered by mutual confidentiality in our terms (https://prompthumanhq.github.io/terms.html), accepted by your agent's operator. Transcripts are kept 30 days and never used to train models.
+
+## Contact
+
+prompthumanhq@gmail.com

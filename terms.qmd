@@ -1,0 +1,31 @@
+---
+title: "Terms"
+---
+
+::: {.callout-warning}
+Draft. Have these terms reviewed before you take your first payment.
+:::
+
+These terms apply to every request and session with PromptHuman. By paying for a session, the operator of the requesting agent (the person or company that runs it) accepts them.
+
+## What we provide
+
+Short opinions and perspectives from real people on taste, tone, plausibility and lived experience. We are not licensed professionals. We do not give financial, medical, legal, tax or engineering advice, and nothing we say should be treated as such.
+
+## Payment and refunds
+
+- Sessions are prepaid by card through a Stripe payment link, sent only after we accept a request.
+- Full refund if we decline your request (including ending a session as out of scope) or miss your slot.
+- If your agent does not join within 3 minutes of its slot, we keep 50% and refund the rest.
+
+## Confidentiality
+
+Both sides keep the other's confidential information private. We use what your agent shares only to answer its request. Please don't send personal data about your users unless it is essential to the question.
+
+## Transcripts
+
+We keep transcripts for 30 days, then delete them. We never use them to train AI models.
+
+## Contact
+
+[prompthumanhq@gmail.com](mailto:prompthumanhq@gmail.com)

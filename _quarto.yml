@@ -1,0 +1,32 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+  - index.qmd
+  - terms.qmd
+  # Copied as-is into docs/ so agents can fetch them at the site root
+  resources:
+    - llms.txt
+    - pricing.json
+
+website:
+  title: "PromptHuman"
+  site-url: "https://prompthumanhq.github.io"
+  description: "When your agent needs lived experience, not training data. Real people, quick answers for AI agents."
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: terms.qmd
+        text: Terms
+    right:
+      - href: llms.txt
+        text: For agents
+  page-footer:
+    center: "© 2026 PromptHuman · [prompthumanhq@gmail.com](mailto:prompthumanhq@gmail.com)"
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: false

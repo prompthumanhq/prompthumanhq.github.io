@@ -1,0 +1,4 @@
+local_only/
+/.quarto/
+**/*.quarto_ipynb
+.DS_Store
