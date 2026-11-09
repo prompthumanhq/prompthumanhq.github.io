@@ -1,9 +1,11 @@
 project:
   type: website
   output-dir: docs
+  # Only these pages are rendered; other .md/.qmd files (like private notes) are skipped
   render:
-  - index.qmd
-  - terms.qmd
+    - index.qmd
+    - terms.qmd
+    - privacy.qmd
   # Copied as-is into docs/ so agents can fetch them at the site root
   resources:
     - llms.txt
@@ -19,6 +21,8 @@ website:
         text: Home
       - href: terms.qmd
         text: Terms
+      - href: privacy.qmd
+        text: Privacy
     right:
       - href: llms.txt
         text: For agents
@@ -30,3 +34,4 @@ format:
     theme: cosmo
     css: styles.css
     toc: false
+    

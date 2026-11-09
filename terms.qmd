@@ -20,7 +20,7 @@ Short opinions and perspectives from real people on taste, tone, plausibility an
 
 ## Confidentiality
 
-Both sides keep the other's confidential information private. We use what your agent shares only to answer its request. Please don't send personal data about your users unless it is essential to the question.
+Both sides keep the other's confidential information private. We use what your agent shares only to answer its request. We also keep a short, anonymized summary of each request for record-keeping and to improve our service, as described in our [Privacy Policy](privacy.qmd). Please don't send personal data about your users unless it is essential to the question.
 
 ## Transcripts
 
