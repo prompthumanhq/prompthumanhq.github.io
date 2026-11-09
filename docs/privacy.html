@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.9">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Privacy – PromptHuman</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-d31a0c91b01e363be7b7a36e602e2c70.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark" aria-label="Site">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">PromptHuman</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./terms.html"> 
+<span class="menu-text">Terms</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./privacy.html" aria-current="page"> 
+<span class="menu-text">Privacy</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./llms.txt"> 
+<span class="menu-text">For agents</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+            <div id="quarto-search" class="" title="Search"></div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#in-short" id="toc-in-short" class="nav-link active" data-scroll-target="#in-short">In short</a></li>
+  <li><a href="#who-this-covers" id="toc-who-this-covers" class="nav-link" data-scroll-target="#who-this-covers">Who this covers</a></li>
+  <li><a href="#what-we-collect" id="toc-what-we-collect" class="nav-link" data-scroll-target="#what-we-collect">What we collect</a></li>
+  <li><a href="#how-we-use-it" id="toc-how-we-use-it" class="nav-link" data-scroll-target="#how-we-use-it">How we use it</a></li>
+  <li><a href="#how-we-store-and-delete-it" id="toc-how-we-store-and-delete-it" class="nav-link" data-scroll-target="#how-we-store-and-delete-it">How we store and delete it</a></li>
+  <li><a href="#the-service-log" id="toc-the-service-log" class="nav-link" data-scroll-target="#the-service-log">The service log</a></li>
+  <li><a href="#who-we-share-it-with" id="toc-who-we-share-it-with" class="nav-link" data-scroll-target="#who-we-share-it-with">Who we share it with</a></li>
+  <li><a href="#information-about-other-people" id="toc-information-about-other-people" class="nav-link" data-scroll-target="#information-about-other-people">Information about other people</a></li>
+  <li><a href="#your-choices-and-rights" id="toc-your-choices-and-rights" class="nav-link" data-scroll-target="#your-choices-and-rights">Your choices and rights</a></li>
+  <li><a href="#security" id="toc-security" class="nav-link" data-scroll-target="#security">Security</a></li>
+  <li><a href="#international-clients" id="toc-international-clients" class="nav-link" data-scroll-target="#international-clients">International clients</a></li>
+  <li><a href="#children" id="toc-children" class="nav-link" data-scroll-target="#children">Children</a></li>
+  <li><a href="#changes" id="toc-changes" class="nav-link" data-scroll-target="#changes">Changes</a></li>
+  <li><a href="#contact" id="toc-contact" class="nav-link" data-scroll-target="#contact">Contact</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content" tabindex="-1">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Privacy</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Draft. Have this policy reviewed before you take your first payment.</p>
+</div>
+</div>
+<p><em>Effective [Month Day, 2026]. Last updated [Month Day, 2026].</em></p>
+<section id="in-short" class="level2">
+<h2 class="anchored" data-anchor-id="in-short">In short</h2>
+<ul>
+<li>We collect what we need to answer requests, hold sessions, write transcripts and take payment.</li>
+<li>Raw requests and transcripts are kept separately, seen only by us and our consultants, and deleted 30 days after the request is completed or declined.</li>
+<li>For the long term, we keep only an anonymized service log: a short, cleaned-up summary of each question with no names, contact details or company names, plus administrative details such as dates and session type.</li>
+<li>We never log the content of out-of-scope requests.</li>
+<li>We don’t sell your information, show ads, or use your requests or transcripts to train AI models.</li>
+<li>Questions or deletion requests: <a href="mailto:prompthumanhq@gmail.com">prompthumanhq@gmail.com</a>.</li>
+</ul>
+</section>
+<section id="who-this-covers" class="level2">
+<h2 class="anchored" data-anchor-id="who-this-covers">Who this covers</h2>
+<p>PromptHuman (“we”, “us”) connects AI agents with real people for short, paid question-and-answer sessions. This policy explains how we handle personal information across everything we do: our website, the requests we receive, the sessions we hold, the transcripts we write and the payments we take.</p>
+<p>“You” means the operator of the requesting agent (the person or company that runs it), including when the agent contacts us on your behalf. We treat requests from an agent as coming from its operator. This policy works alongside our <a href="./terms.html">Terms</a>, including their confidentiality section. Where the two differ, the one that gives your information more protection applies.</p>
+</section>
+<section id="what-we-collect" class="level2">
+<h2 class="anchored" data-anchor-id="what-we-collect">What we collect</h2>
+<p><strong>Requests and correspondence.</strong> When an agent or operator emails us, we receive the sending email address, the request and anything attached to it, and any later messages in the thread.</p>
+<p><strong>Sessions and transcripts.</strong> We receive what is said during a session, and we write a transcript that we send to you.</p>
+<p><strong>Payments.</strong> Sessions are paid by card through Stripe. Through Stripe we receive your email address, your name or business name if you provide one, your billing country and postal code, the request reference you enter at checkout, and the amount and status of the payment. We never see or store full card numbers.</p>
+<p><strong>Phone and voicemail.</strong> If you call or text our business number, we receive your number and any message you leave.</p>
+<p><strong>Our website.</strong> Our website is a static site hosted by GitHub Pages. We don’t use cookies, analytics or tracking scripts. GitHub, as our host, may log technical information such as visitors’ IP addresses for security purposes, under <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub’s privacy statement</a>.</p>
+<p><strong>What we ask you not to send.</strong> As our Terms say, please don’t send personal data about your users unless it is essential to the question. Never send government ID numbers, financial account numbers, passwords, health information or information about children. If a request depends on that kind of information, or on financial, medical, legal, tax or engineering advice, we decline it as out of scope.</p>
+</section>
+<section id="how-we-use-it" class="level2">
+<h2 class="anchored" data-anchor-id="how-we-use-it">How we use it</h2>
+<ul>
+<li>To decide whether a request is in scope and reply to it.</li>
+<li>To schedule and hold sessions, and to write and deliver transcripts.</li>
+<li>To take payments, issue refunds and keep accounting and tax records.</li>
+<li>To keep the anonymized service log described below, which we use to improve our service.</li>
+<li>To prevent fraud and abuse, enforce our Terms and meet legal obligations.</li>
+</ul>
+<p>We don’t sell personal information, use it for advertising, or use requests or transcripts to train AI models.</p>
+</section>
+<section id="how-we-store-and-delete-it" class="level2">
+<h2 class="anchored" data-anchor-id="how-we-store-and-delete-it">How we store and delete it</h2>
+<p>We keep three kinds of records, each stored and kept for a different period.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Record</th>
+<th>What it contains</th>
+<th>How long we keep it</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Raw records</td>
+<td>Original requests, attachments, email threads about a request, session text and transcripts</td>
+<td>Deleted 30 days after the request is completed or declined</td>
+</tr>
+<tr class="even">
+<td>Payment records</td>
+<td>Payment and refund details held by Stripe and in our accounts</td>
+<td>As long as tax and accounting law requires [for example, seven years]</td>
+</tr>
+<tr class="odd">
+<td>Service log</td>
+<td>Anonymized summaries and administrative details</td>
+<td>Kept indefinitely</td>
+</tr>
+</tbody>
+</table>
+<p>Raw records are stored separately from the service log, and only we and our consultants can access them. We keep a raw record past 30 days only if we need it to resolve a dispute, refund or chargeback, or if the law requires us to keep it, and we delete it once that need ends.</p>
+<p>The transcript we send you is yours to keep. Deleting our copy doesn’t affect yours.</p>
+</section>
+<section id="the-service-log" class="level2">
+<h2 class="anchored" data-anchor-id="the-service-log">The service log</h2>
+<p>To understand what agents need and improve our service, we keep a log of every request. It contains:</p>
+<ul>
+<li>a short summary of the question, written by us, with names, contact details, company names and identifying specifics removed;</li>
+<li>a request ID and a client code, which let us recognize repeat clients without recording who they are;</li>
+<li>administrative details, such as how the agent found us, the agent platform, the type of operator (company, individual or unknown), the question category, the session type and price, the dates and times a request was received, reviewed and completed, the session length, payment and refund status, and whether the session changed the agent’s next step.</li>
+</ul>
+<p>The log never contains raw request text, names, email addresses, phone numbers, company names or payment details. If we decline a request as out of scope, the log records only that it was declined and the general reason, such as “medical”, never what the request said.</p>
+<p>The key that links a client code to a client is held only in our email and payment records, which follow the retention periods above. We may share aggregate statistics from the log, such as how many requests fall into each category, but never in a way that could identify a client or a specific request.</p>
+</section>
+<section id="who-we-share-it-with" class="level2">
+<h2 class="anchored" data-anchor-id="who-we-share-it-with">Who we share it with</h2>
+<ul>
+<li><strong>Our consultants</strong>, who have each signed an agreement with us that includes confidentiality terms. They see only what they need to handle your request.</li>
+<li><strong>Service providers</strong> who store or process information for us: Stripe (payments), Google (email, file storage and our business phone number), GitHub (website hosting) and [session chat tool]. Each handles information under its own privacy policy.</li>
+<li><strong>Legal and safety reasons</strong>, when we believe in good faith that the law requires it, or to protect the rights, property or safety of PromptHuman, our clients or others.</li>
+<li><strong>A business transfer</strong>, if PromptHuman is merged, sold or reorganized. Anyone who takes over must protect your information at least as well as this policy does.</li>
+</ul>
+<p>We don’t share or publish requests or transcripts with anyone else.</p>
+</section>
+<section id="information-about-other-people" class="level2">
+<h2 class="anchored" data-anchor-id="information-about-other-people">Information about other people</h2>
+<p>A request may mention people other than you, such as your users or colleagues. You’re responsible for having the right to share their information with us. We treat it the same way as yours: it stays in the raw records, it’s deleted after 30 days, and it never enters the service log.</p>
+</section>
+<section id="your-choices-and-rights" class="level2">
+<h2 class="anchored" data-anchor-id="your-choices-and-rights">Your choices and rights</h2>
+<p>You can ask us to:</p>
+<ul>
+<li>tell you what personal information we hold about you and give you a copy;</li>
+<li>correct information that’s wrong;</li>
+<li>delete your raw records before the 30 days are up;</li>
+<li>stop using your information for a particular purpose.</li>
+</ul>
+<p>Email <a href="mailto:prompthumanhq@gmail.com">prompthumanhq@gmail.com</a> from the address you used with us, or include your request ID so we can confirm the request is yours. We’ll respond within 30 days. We may need to keep payment records the law requires us to keep. The service log contains no personal information, so there is nothing in it to hand over or delete.</p>
+</section>
+<section id="security" class="level2">
+<h2 class="anchored" data-anchor-id="security">Security</h2>
+<p>We protect our accounts with two-step verification, keep raw records separate from the service log, limit access to us and our consultants, and delete raw records on schedule. No system is perfectly secure. If a breach affects your personal information, we’ll notify you as the law requires.</p>
+</section>
+<section id="international-clients" class="level2">
+<h2 class="anchored" data-anchor-id="international-clients">International clients</h2>
+<p>We’re based in Pennsylvania, in the United States, and our service providers store information in the United States and elsewhere. If you contact us from another country, your information is transferred to and handled in the United States.</p>
+<p>If you’re in the European Economic Area or the United Kingdom, we rely on these legal bases: performing our agreement with you (handling requests, sessions and payments), our legitimate interest in improving our service (the anonymized service log) and in preventing fraud, and legal obligations (tax and accounting records). You also have the right to complain to your local data protection authority.</p>
+</section>
+<section id="children" class="level2">
+<h2 class="anchored" data-anchor-id="children">Children</h2>
+<p>Our service is for businesses and adults. We don’t knowingly collect information from anyone under 18.</p>
+</section>
+<section id="changes" class="level2">
+<h2 class="anchored" data-anchor-id="changes">Changes</h2>
+<p>If we change this policy, we’ll post the new version here and update the date at the top. If a change materially affects how we handle information we already hold, we’ll highlight it on this page before it takes effect.</p>
+</section>
+<section id="contact" class="level2">
+<h2 class="anchored" data-anchor-id="contact">Contact</h2>
+<p>PromptHuman<br>
+[Mailing address]<br>
+<a href="mailto:prompthumanhq@gmail.com">prompthumanhq@gmail.com</a></p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/prompthumanhq\.github\.io");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+          if (!link.classList.contains('no-external-icon')) {
+          }
+        }
+      }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
+          if (lineIds.length > 0) {
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            placeBand(gutterDiv, el, lastEl);
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>© 2026 PromptHuman · <a href="mailto:prompthumanhq@gmail.com">prompthumanhq@gmail.com</a></p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
