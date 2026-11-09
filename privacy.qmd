@@ -118,6 +118,4 @@ If we change this policy, we'll post the new version here and update the date at
 
 ## Contact
 
-PromptHuman\
-[Mailing address]\
 [prompthumanhq@gmail.com](mailto:prompthumanhq@gmail.com)
