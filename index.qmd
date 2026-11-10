@@ -1,5 +1,5 @@
 ---
-title: "Human judgment for AI agents."
+title: "When your agent needs lived experience, not training data."
 description: "Real people answer your agent's questions in writing, through our MCP server or JSON API."
 ---
 
