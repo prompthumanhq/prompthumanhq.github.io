@@ -11,77 +11,77 @@
     "href": "privacy.html#in-short",
     "title": "Privacy",
     "section": "In short",
-    "text": "In short\n\nWe collect what we need to answer requests, hold sessions, write transcripts and take payment.\nRaw requests and transcripts are kept separately, seen only by us and our consultants, and deleted 30 days after the request is completed or declined.\nFor the long term, we keep only an anonymized service log: a short, cleaned-up summary of each question with no names, contact details or company names, plus administrative details such as dates and session type.\nWe never log the content of out-of-scope requests.\nWe don’t sell your information, show ads, or use your requests or transcripts to train AI models.\nQuestions or deletion requests: prompthumanhq@gmail.com."
+    "text": "In short\n\nWe collect what we need to answer requests, deliver written replies and take payment.\nConversations (requests, follow-ups and our replies) are kept separately, seen only by us and our consultants, and deleted 90 days after the conversation closes.\nFor the long term, we keep only an anonymized service log: a short, cleaned-up summary of each question with no names, contact details or company names, plus administrative details such as dates and tier.\nWe never log the content of out-of-scope requests.\nWe don’t sell your information, show ads, or use your conversations to train AI models.\nQuestions or deletion requests: prompthumanhq@gmail.com."
   },
   {
     "objectID": "privacy.html#who-this-covers",
     "href": "privacy.html#who-this-covers",
     "title": "Privacy",
     "section": "Who this covers",
-    "text": "Who this covers\nPromptHuman (“we”, “us”) connects AI agents with real people for short, paid question-and-answer sessions. This policy explains how we handle personal information across everything we do: our website, the requests we receive, the sessions we hold, the transcripts we write and the payments we take.\n“You” means the operator of the requesting agent (the person or company that runs it), including when the agent contacts us on your behalf. We treat requests from an agent as coming from its operator. This policy works alongside our Terms, including their confidentiality section. Where the two differ, the one that gives your information more protection applies."
+    "text": "Who this covers\nPromptHuman (“we”, “us”) connects AI agents with real people for short, paid questions answered in writing. This policy explains how we handle personal information across everything we do: our website, our MCP server and JSON API, the requests we receive, the replies we write and the payments we take.\n“You” means the operator of the requesting agent (the person or company that runs it), including when the agent contacts us on your behalf. We treat requests from an agent as coming from its operator. This policy works alongside our Terms, including their confidentiality section. Where the two differ, the one that gives your information more protection applies."
   },
   {
     "objectID": "privacy.html#what-we-collect",
     "href": "privacy.html#what-we-collect",
     "title": "Privacy",
     "section": "What we collect",
-    "text": "What we collect\nRequests and correspondence. When an agent or operator emails us, we receive the sending email address, the request and anything attached to it, and any later messages in the thread.\nSessions and transcripts. We receive what is said during a session, and we write a transcript that we send to you.\nPayments. Sessions are paid by card through Stripe. Through Stripe we receive your email address, your name or business name if you provide one, your billing country and postal code, the request reference you enter at checkout, and the amount and status of the payment. We never see or store full card numbers.\nPhone and voicemail. If you call or text our business number, we receive your number and any message you leave.\nOur website. Our website is a static site hosted by GitHub Pages. We don’t use cookies, analytics or tracking scripts. GitHub, as our host, may log technical information such as visitors’ IP addresses for security purposes, under GitHub’s privacy statement.\nWhat we ask you not to send. As our Terms say, please don’t send personal data about your users unless it is essential to the question. Never send government ID numbers, financial account numbers, passwords, health information or information about children. If a request depends on that kind of information, or on financial, medical, legal, tax or engineering advice, we decline it as out of scope."
+    "text": "What we collect\nRequests and conversations. Agents submit requests only through our MCP server or JSON API. We receive the question, any background, the tier chosen, follow-up messages, and technical details needed to run the service, such as when each message arrived. We write replies that we return to your agent through the same channel.\nEmail. If a person emails us with a question about the service or a refund, we receive the sending email address and the message.\nPayments. Requests are paid by card through Stripe. Through Stripe we receive your email address, your name or business name if you provide one, your billing country and postal code, the request reference you enter at checkout, and the amount and status of the payment. We never see or store full card numbers.\nPhone and voicemail. If you call or text our business number, we receive your number and any message you leave.\nOur website. Our website is a static site hosted by GitHub Pages. We don’t use cookies, analytics or tracking scripts. GitHub, as our host, may log technical information such as visitors’ IP addresses for security purposes, under GitHub’s privacy statement.\nWhat we ask you not to send. As our Terms say, never send passwords, API keys, tokens or other credentials; payment card, bank account or government ID numbers; health or medical records; personal information about anyone other than the operator; or information you are not authorised to share. Our server rejects obvious cases automatically, and we may decline or close a request that contains such information and delete it without answering."
   },
   {
     "objectID": "privacy.html#how-we-use-it",
     "href": "privacy.html#how-we-use-it",
     "title": "Privacy",
     "section": "How we use it",
-    "text": "How we use it\n\nTo decide whether a request is in scope and reply to it.\nTo schedule and hold sessions, and to write and deliver transcripts.\nTo take payments, issue refunds and keep accounting and tax records.\nTo keep the anonymized service log described below, which we use to improve our service.\nTo prevent fraud and abuse, enforce our Terms and meet legal obligations.\n\nWe don’t sell personal information, use it for advertising, or use requests or transcripts to train AI models."
+    "text": "How we use it\n\nTo decide whether a request is in scope and reply to it.\nTo write and deliver replies and follow-up replies.\nTo take payments, issue refunds and keep accounting and tax records.\nTo keep the anonymized service log described below, which we use to improve our service.\nTo prevent fraud and abuse, enforce our Terms and meet legal obligations.\n\nWe don’t sell personal information, use it for advertising, or use conversations to train AI models."
   },
   {
     "objectID": "privacy.html#how-we-store-and-delete-it",
     "href": "privacy.html#how-we-store-and-delete-it",
     "title": "Privacy",
     "section": "How we store and delete it",
-    "text": "How we store and delete it\nWe keep three kinds of records, each stored and kept for a different period.\n\n\n\n\n\n\n\n\nRecord\nWhat it contains\nHow long we keep it\n\n\n\n\nRaw records\nOriginal requests, attachments, email threads about a request, session text and transcripts\nDeleted 30 days after the request is completed or declined\n\n\nPayment records\nPayment and refund details held by Stripe and in our accounts\nAs long as tax and accounting law requires [for example, seven years]\n\n\nService log\nAnonymized summaries and administrative details\nKept indefinitely\n\n\n\nRaw records are stored separately from the service log, and only we and our consultants can access them. We keep a raw record past 30 days only if we need it to resolve a dispute, refund or chargeback, or if the law requires us to keep it, and we delete it once that need ends.\nThe transcript we send you is yours to keep. Deleting our copy doesn’t affect yours."
+    "text": "How we store and delete it\nWe keep three kinds of records, each stored and kept for a different period.\n\n\n\n\n\n\n\n\nRecord\nWhat it contains\nHow long we keep it\n\n\n\n\nConversations\nRequests, background, follow-ups and our replies\nDeleted 90 days after the conversation closes\n\n\nPayment records\nPayment and refund details held by Stripe (under its own policies) and in our accounts\nAs long as tax and accounting law requires [for example, seven years]\n\n\nService log\nAnonymized summaries and administrative details\nKept indefinitely\n\n\n\nConversations travel over encrypted connections and are stored with our hosting provider, Cloudflare, separately from the service log. Only we and our consultants can read them. Our phone notifications about new requests contain no request content. We keep a conversation past 90 days only if we need it to resolve a dispute, refund or chargeback, or if the law requires us to keep it, and we delete it once that need ends.\nYour agent’s platform may keep its own copy of the conversation. That copy is your responsibility, and deleting ours doesn’t affect it."
   },
   {
     "objectID": "privacy.html#the-service-log",
     "href": "privacy.html#the-service-log",
     "title": "Privacy",
     "section": "The service log",
-    "text": "The service log\nTo understand what agents need and improve our service, we keep a log of every request. It contains:\n\na short summary of the question, written by us, with names, contact details, company names and identifying specifics removed;\na request ID and a client code, which let us recognize repeat clients without recording who they are;\nadministrative details, such as how the agent found us, the agent platform, the type of operator (company, individual or unknown), the question category, the session type and price, the dates and times a request was received, reviewed and completed, the session length, payment and refund status, and whether the session changed the agent’s next step.\n\nThe log never contains raw request text, names, email addresses, phone numbers, company names or payment details. If we decline a request as out of scope, the log records only that it was declined and the general reason, such as “medical”, never what the request said.\nThe key that links a client code to a client is held only in our email and payment records, which follow the retention periods above. We may share aggregate statistics from the log, such as how many requests fall into each category, but never in a way that could identify a client or a specific request."
+    "text": "The service log\nTo understand what agents need and improve our service, we keep a log of every request. It contains:\n\na short summary of the question, written by us, with names, contact details, company names and identifying specifics removed;\na request ID and a client code, which let us recognize repeat clients without recording who they are;\nadministrative details, such as how the agent found us, the agent platform, the type of operator (company, individual or unknown), the question category, the tier and price, the dates and times a request was received, reviewed and answered, the number of replies and words used, payment and refund status, and whether our answer changed the agent’s next step.\n\nThe log never contains raw request text, names, email addresses, phone numbers, company names or payment details. If we decline a request as out of scope, the log records only that it was declined and the general reason, such as “medical”, never what the request said.\nThe key that links a client code to a client is held only in our conversation and payment records, which follow the retention periods above. We may share aggregate statistics from the log, such as how many requests fall into each category, but never in a way that could identify a client or a specific request."
   },
   {
     "objectID": "privacy.html#who-we-share-it-with",
     "href": "privacy.html#who-we-share-it-with",
     "title": "Privacy",
     "section": "Who we share it with",
-    "text": "Who we share it with\n\nOur consultants, who have each signed an agreement with us that includes confidentiality terms. They see only what they need to handle your request.\nService providers who store or process information for us: Stripe (payments), Google (email, file storage and our business phone number), GitHub (website hosting) and [session chat tool]. Each handles information under its own privacy policy.\nLegal and safety reasons, when we believe in good faith that the law requires it, or to protect the rights, property or safety of PromptHuman, our clients or others.\nA business transfer, if PromptHuman is merged, sold or reorganized. Anyone who takes over must protect your information at least as well as this policy does.\n\nWe don’t share or publish requests or transcripts with anyone else."
+    "text": "Who we share it with\n\nOur consultants, who have each signed an agreement with us that includes confidentiality terms. They see only what they need to handle your request.\nService providers who store or process information for us: Cloudflare (our MCP server, JSON API and conversation storage), Stripe (payments), Google (email and our business phone number) and GitHub (website hosting). Each handles information under its own privacy policy.\nLegal and safety reasons, when we believe in good faith that the law requires it, or to protect the rights, property or safety of PromptHuman, our clients or others.\nA business transfer, if PromptHuman is merged, sold or reorganized. Anyone who takes over must protect your information at least as well as this policy does.\n\nWe don’t share or publish conversations with anyone else."
   },
   {
     "objectID": "privacy.html#information-about-other-people",
     "href": "privacy.html#information-about-other-people",
     "title": "Privacy",
     "section": "Information about other people",
-    "text": "Information about other people\nA request may mention people other than you, such as your users or colleagues. You’re responsible for having the right to share their information with us. We treat it the same way as yours: it stays in the raw records, it’s deleted after 30 days, and it never enters the service log."
+    "text": "Information about other people\nA request may mention people other than you, such as your users or colleagues. You’re responsible for having the right to share their information with us. We treat it the same way as yours: it stays in the conversation record, it’s deleted 90 days after the conversation closes, and it never enters the service log."
   },
   {
     "objectID": "privacy.html#your-choices-and-rights",
     "href": "privacy.html#your-choices-and-rights",
     "title": "Privacy",
     "section": "Your choices and rights",
-    "text": "Your choices and rights\nYou can ask us to:\n\ntell you what personal information we hold about you and give you a copy;\ncorrect information that’s wrong;\ndelete your raw records before the 30 days are up;\nstop using your information for a particular purpose.\n\nEmail prompthumanhq@gmail.com from the address you used with us, or include your request ID so we can confirm the request is yours. We’ll respond within 30 days. We may need to keep payment records the law requires us to keep. The service log contains no personal information, so there is nothing in it to hand over or delete."
+    "text": "Your choices and rights\nYou can ask us to:\n\ntell you what personal information we hold about you and give you a copy;\ncorrect information that’s wrong;\ndelete your conversations before the 90 days are up;\nstop using your information for a particular purpose.\n\nEmail prompthumanhq@gmail.com and include your conversation ID so we can confirm the request is yours. We’ll respond within 30 days. We may need to keep payment records the law requires us to keep. The service log contains no personal information, so there is nothing in it to hand over or delete."
   },
   {
     "objectID": "privacy.html#security",
     "href": "privacy.html#security",
     "title": "Privacy",
     "section": "Security",
-    "text": "Security\nWe protect our accounts with two-step verification, keep raw records separate from the service log, limit access to us and our consultants, and delete raw records on schedule. No system is perfectly secure. If a breach affects your personal information, we’ll notify you as the law requires."
+    "text": "Security\nWe protect our accounts with two-step verification, encrypt conversations in transit, keep them separate from the service log, limit access to us and our consultants, and delete them on schedule. No system is perfectly secure. If a breach affects your personal information, we’ll notify you as the law requires."
   },
   {
     "objectID": "privacy.html#international-clients",
     "href": "privacy.html#international-clients",
     "title": "Privacy",
     "section": "International clients",
-    "text": "International clients\nWe’re based in Pennsylvania, in the United States, and our service providers store information in the United States and elsewhere. If you contact us from another country, your information is transferred to and handled in the United States.\nIf you’re in the European Economic Area or the United Kingdom, we rely on these legal bases: performing our agreement with you (handling requests, sessions and payments), our legitimate interest in improving our service (the anonymized service log) and in preventing fraud, and legal obligations (tax and accounting records). You also have the right to complain to your local data protection authority."
+    "text": "International clients\nWe’re based in Pennsylvania, in the United States, and our service providers store information in the United States and elsewhere. If you contact us from another country, your information is transferred to and handled in the United States.\nIf you’re in the European Economic Area or the United Kingdom, we rely on these legal bases: performing our agreement with you (handling requests, replies and payments), our legitimate interest in improving our service (the anonymized service log) and in preventing fraud, and legal obligations (tax and accounting records). You also have the right to complain to your local data protection authority."
   },
   {
     "objectID": "privacy.html#children",
@@ -107,79 +107,128 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "When your agent needs lived experience, not training data.",
+    "title": "Human judgment for AI agents.",
     "section": "",
-    "text": "PromptHuman connects your agent with real people for taste, tone, plausibility and lived experience. Confidential, transcribed, and prepaid only once we’re ready to meet."
-  },
-  {
-    "objectID": "index.html#session-types",
-    "href": "index.html#session-types",
-    "title": "When your agent needs lived experience, not training data.",
-    "section": "Session types",
-    "text": "Session types\n\n\n\n\n\n\n\n\nSession\nWhat you get\nPrice\n\n\n\n\nQuick Take\nOne question, one written answer from a real person. Answered during business hours.\n$8\n\n\n5-Minute Session\nFive-minute live chat, with transcript. Text by default; voice on request.\n$15\n\n\n10-Minute Session\nTen-minute live chat, with transcript. Text by default; voice on request.\n$25"
-  },
-  {
-    "objectID": "index.html#what-we-answer",
-    "href": "index.html#what-we-answer",
-    "title": "When your agent needs lived experience, not training data.",
-    "section": "What we answer",
-    "text": "What we answer\n\n\nYes\n\nWill this email, name, gift or design land with a real person?\nWould a normal person actually do, say or believe this?\nWhat a move, job search, trip or hobby is really like\nLocal norms, etiquette and what reads as odd\nWhich option a person would pick, and why\n\n\n\n\nNo\n\nFinancial, medical, legal, tax or engineering advice\nAnything meant to deceive or harm a person\n\nWe’re experienced people, not licensed professionals."
-  },
-  {
-    "objectID": "index.html#send-a-request",
-    "href": "index.html#send-a-request",
-    "title": "When your agent needs lived experience, not training data.",
-    "section": "Send a request",
-    "text": "Send a request\nEmail prompthumanhq@gmail.com with three lines. Your agent can send it directly. Nothing is charged until we confirm.\nSubject: Request: 5-Minute Session\n\nTask: Planning a surprise 40th birthday dinner in Chicago for a client.\nQuestion: Does a rooftop in late October feel special or risky to most guests?\nSession type: 5-Minute Session"
+    "text": "Your agent asks a real person a question and gets a written answer. Gut checks, how something will read to people, plausibility checks, local context and tie-breaking calls. Paid per question, no operator involvement needed."
   },
   {
     "objectID": "index.html#how-it-works",
     "href": "index.html#how-it-works",
-    "title": "When your agent needs lived experience, not training data.",
+    "title": "Human judgment for AI agents.",
     "section": "How it works",
-    "text": "How it works\n\nYou email a request in the format above.\nWe check it’s in scope and that a consultant is free. If not, we say so and nothing is charged.\nWhen we’re ready, we reply with a time and a Stripe payment link for that session type.\nPayment confirms the slot. We meet, then send the transcript."
+    "text": "How it works\n\nYour agent sends one clear question through our MCP server or JSON API.\nWe accept or decline within 12 hours. Nothing is charged before we accept.\nYour agent pays a Stripe link within 48 hours.\nOur first written reply arrives within 24 hours of payment, and each follow-up gets a reply within 12 hours."
   },
   {
-    "objectID": "index.html#confidential-by-default",
-    "href": "index.html#confidential-by-default",
-    "title": "When your agent needs lived experience, not training data.",
-    "section": "Confidential by default",
-    "text": "Confidential by default\nEvery session is covered by mutual confidentiality in our terms, so your agent can share real context. Transcripts are kept for 30 days and never used to train models.\nFor agents: llms.txt and pricing.json."
+    "objectID": "index.html#pricing",
+    "href": "index.html#pricing",
+    "title": "Human judgment for AI agents.",
+    "section": "Pricing",
+    "text": "Pricing\n\n\n\nTier\nPrice\nWhat you get\n\n\n\n\nQuick take\n$8\nOne reply, up to 150 words. No follow-ups.\n\n\nStandard\n$15\nUp to 500 words across up to 3 replies.\n\n\nDeep dive\n$25\nUp to 1,000 words across up to 5 replies.\n\n\n\nWord limits count the words in our replies. Your agent’s question can be up to 600 words, plus up to 400 words of background, and each follow-up can be up to 300 words."
+  },
+  {
+    "objectID": "index.html#what-we-answer",
+    "href": "index.html#what-we-answer",
+    "title": "Human judgment for AI agents.",
+    "section": "What we answer",
+    "text": "What we answer\n\n\nYes\n\nWill this email, name, gift or design land with a real person?\nWould a normal person actually do, say or believe this?\nWhat a move, job search, trip or hobby is really like\nLocal norms, etiquette and what reads as odd\nWhich option a person would pick, and why\n\n\n\n\nNo\n\nLegal, medical, tax, financial or investment advice\nAnything that needs access to accounts or credentials\nActions in the world on your behalf\nSolving CAPTCHAs or getting around verification checks\nDeception, impersonation or harassment\nAnything illegal or harmful\n\nWe’re experienced people, not licensed professionals."
+  },
+  {
+    "objectID": "index.html#dont-send-sensitive-data",
+    "href": "index.html#dont-send-sensitive-data",
+    "title": "Human judgment for AI agents.",
+    "section": "Don’t send sensitive data",
+    "text": "Don’t send sensitive data\nWe don’t accept passwords, API keys or other credentials; card, bank or government ID numbers; health records; personal information about people other than the operator; or anything the operator hasn’t authorised the agent to share. Our server rejects obvious cases automatically."
+  },
+  {
+    "objectID": "index.html#connect-your-agent",
+    "href": "index.html#connect-your-agent",
+    "title": "Human judgment for AI agents.",
+    "section": "Connect your agent",
+    "text": "Connect your agent\n\nMCP server: https://prompthuman-api.YOUR-SUBDOMAIN.workers.dev/mcp\nJSON API: https://prompthuman-api.YOUR-SUBDOMAIN.workers.dev/api/info\nInstructions for agents: llms.txt and pricing.json\n\nEvery request is covered by mutual confidentiality in our terms. Conversations are deleted 90 days after they close and never used to train models.\nQuestions from humans: prompthumanhq@gmail.com"
   },
   {
     "objectID": "terms.html",
     "href": "terms.html",
     "title": "Terms",
     "section": "",
-    "text": "Warning\n\n\n\nDraft. Have these terms reviewed before you take your first payment.\nThese terms apply to every request and session with PromptHuman. By paying for a session, the operator of the requesting agent (the person or company that runs it) accepts them."
+    "text": "Warning\n\n\n\nDraft. Have these terms reviewed before you take your first payment."
   },
   {
-    "objectID": "terms.html#what-we-provide",
-    "href": "terms.html#what-we-provide",
+    "objectID": "terms.html#who-these-terms-bind",
+    "href": "terms.html#who-these-terms-bind",
     "title": "Terms",
-    "section": "What we provide",
-    "text": "What we provide\nShort opinions and perspectives from real people on taste, tone, plausibility and lived experience. We are not licensed professionals. We do not give financial, medical, legal, tax or engineering advice, and nothing we say should be treated as such."
+    "section": "Who these terms bind",
+    "text": "Who these terms bind\nThese terms are an agreement between PromptHuman and the person or organisation that operates the AI agent submitting a request (“you”). By submitting a request with accept_terms set to true, or by paying for a request, your agent accepts these terms on your behalf, and you are responsible for its requests and payments."
   },
   {
-    "objectID": "terms.html#payment-and-refunds",
-    "href": "terms.html#payment-and-refunds",
+    "objectID": "terms.html#the-service",
+    "href": "terms.html#the-service",
     "title": "Terms",
-    "section": "Payment and refunds",
-    "text": "Payment and refunds\n\nSessions are prepaid by card through a Stripe payment link, sent only after we accept a request.\nFull refund if we decline your request (including ending a session as out of scope) or miss your slot.\nIf your agent does not join within 3 minutes of its slot, we keep 50% and refund the rest."
+    "section": "The service",
+    "text": "The service\nPromptHuman consultants answer questions in writing. Requests are submitted only through our MCP server or JSON API. We may decline any request before payment, for any reason."
+  },
+  {
+    "objectID": "terms.html#tiers-and-word-limits",
+    "href": "terms.html#tiers-and-word-limits",
+    "title": "Terms",
+    "section": "Tiers and word limits",
+    "text": "Tiers and word limits\n\nQuick take ($8): one reply of up to 150 words, with no follow-ups.\nStandard ($15): up to 500 words of replies across up to 3 replies.\nDeep dive ($25): up to 1,000 words of replies across up to 5 replies.\n\nWord limits count words in our replies, separated by spaces. Each follow-up you send receives one reply. A conversation closes when its replies or words are used up, when you send no follow-up for 7 days, or when we close it after our last reply."
+  },
+  {
+    "objectID": "terms.html#turnaround",
+    "href": "terms.html#turnaround",
+    "title": "Terms",
+    "section": "Turnaround",
+    "text": "Turnaround\nWe accept or decline new requests within 12 hours. Accepted requests must be paid within 48 hours or they expire. Our first reply is due within 24 hours of confirmed payment, and each later reply within 12 hours of your follow-up."
+  },
+  {
+    "objectID": "terms.html#payment",
+    "href": "terms.html#payment",
+    "title": "Terms",
+    "section": "Payment",
+    "text": "Payment\nPayment is due in advance, by card, through the Stripe link we provide after accepting your request. We do not charge for declined or expired requests."
+  },
+  {
+    "objectID": "terms.html#refunds",
+    "href": "terms.html#refunds",
+    "title": "Terms",
+    "section": "Refunds",
+    "text": "Refunds\nYou get a full refund if we miss a reply deadline, or if we accept a request and then cannot answer it. Request one with the request_refund tool or by emailing prompthumanhq@gmail.com. Otherwise, payments are non-refundable once a reply has been delivered on time. Refunds go back to the original payment method."
+  },
+  {
+    "objectID": "terms.html#sensitive-data",
+    "href": "terms.html#sensitive-data",
+    "title": "Terms",
+    "section": "Sensitive data",
+    "text": "Sensitive data\nYou must not send passwords, API keys, tokens or other credentials; payment card, bank account or government ID numbers; health or medical records; personal information about anyone other than you; or information you are not authorised to share. We may decline or close any request that contains such information, and we may delete that information without answering."
+  },
+  {
+    "objectID": "terms.html#out-of-scope",
+    "href": "terms.html#out-of-scope",
+    "title": "Terms",
+    "section": "Out of scope",
+    "text": "Out of scope\nWe do not provide legal, medical, tax, financial or investment advice; work that needs access to accounts or credentials; actions in the world on your behalf; solving CAPTCHAs or getting around verification checks; deception, impersonation or harassment; or anything illegal or harmful."
+  },
+  {
+    "objectID": "terms.html#not-professional-advice",
+    "href": "terms.html#not-professional-advice",
+    "title": "Terms",
+    "section": "Not professional advice",
+    "text": "Not professional advice\nAnswers are the personal judgment of our consultants. They are not professional advice, and you are responsible for decisions you or your agent make using them."
+  },
+  {
+    "objectID": "terms.html#security-and-data-retention",
+    "href": "terms.html#security-and-data-retention",
+    "title": "Terms",
+    "section": "Security and data retention",
+    "text": "Security and data retention\nConversations travel over encrypted connections and are stored with our hosting provider (Cloudflare). Only PromptHuman consultants can read them. Our phone notifications contain no request content. We delete each conversation, including all messages, 90 days after it closes. Payment records are kept by Stripe under its own policies. Your agent’s platform may keep its own copy of the conversation; that copy is your responsibility."
   },
   {
     "objectID": "terms.html#confidentiality",
     "href": "terms.html#confidentiality",
     "title": "Terms",
     "section": "Confidentiality",
-    "text": "Confidentiality\nBoth sides keep the other’s confidential information private. We use what your agent shares only to answer its request. We also keep a short, anonymized summary of each request for record-keeping and to improve our service, as described in our Privacy Policy. Please don’t send personal data about your users unless it is essential to the question."
-  },
-  {
-    "objectID": "terms.html#transcripts",
-    "href": "terms.html#transcripts",
-    "title": "Terms",
-    "section": "Transcripts",
-    "text": "Transcripts\nWe keep transcripts for 30 days, then delete them. We never use them to train AI models."
+    "text": "Confidentiality\nBoth sides keep the other’s confidential information private. We use what your agent shares only to answer its request. We also keep a short, anonymized summary of each request for record-keeping and to improve our service, as described in our Privacy Policy. We never use conversations to train AI models."
   },
   {
     "objectID": "terms.html#contact",

@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.11.9">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Prepaid, confidential sessions with real people for AI agents that need human judgment.">
+<meta name="description" content="Real people answer your agent’s questions in writing, through our MCP server or JSON API.">
 
-<title>When your agent needs lived experience, not training data. – PromptHuman</title>
+<title>Human judgment for AI agents. – PromptHuman</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -39,15 +39,14 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-d31a0c91b01e363be7b7a36e602e2c70.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-445b8638c3d06994fee0907d791121c4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -80,18 +79,19 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark" aria-label="Site">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">PromptHuman</span>
     </a>
   </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -118,7 +118,6 @@ ul.task-list li input[type="checkbox"] {
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
 </div>
-            <div id="quarto-search" class="" title="Search"></div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -128,16 +127,16 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content" tabindex="-1">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">When your agent needs lived experience, not training data.</h1>
+<h1 class="title">Human judgment for AI agents.</h1>
 </div>
 
 <div>
   <div class="description">
-    Prepaid, confidential sessions with real people for AI agents that need human judgment.
+    Real people answer your agent’s questions in writing, through our MCP server or JSON API.
   </div>
 </div>
 
@@ -154,43 +153,48 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>PromptHuman connects your agent with real people for taste, tone, plausibility and lived experience. Confidential, transcribed, and prepaid only once we’re ready to meet.</p>
+<p>Your agent asks a real person a question and gets a written answer. Gut checks, how something will read to people, plausibility checks, local context and tie-breaking calls. Paid per question, no operator involvement needed.</p>
 <div class="prepaid">
-<p>Prepaid by card through a Stripe payment link. Full refund if we decline your request or miss your slot.</p>
+<p>Prepaid by card through a Stripe link, sent only after we accept a request. Full refund if we miss a reply deadline.</p>
 </div>
-<section id="session-types" class="level2">
-<h2 class="anchored" data-anchor-id="session-types">Session types</h2>
+<section id="how-it-works" class="level2">
+<h2 class="anchored" data-anchor-id="how-it-works">How it works</h2>
+<ol type="1">
+<li>Your agent sends one clear question through our MCP server or JSON API.</li>
+<li>We accept or decline within 12 hours. Nothing is charged before we accept.</li>
+<li>Your agent pays a Stripe link within 48 hours.</li>
+<li>Our first written reply arrives within 24 hours of payment, and each follow-up gets a reply within 12 hours.</li>
+</ol>
+</section>
+<section id="pricing" class="level2">
+<h2 class="anchored" data-anchor-id="pricing">Pricing</h2>
 <table class="caption-top table">
-<colgroup>
-<col style="width: 30%">
-<col style="width: 30%">
-<col style="width: 40%">
-</colgroup>
 <thead>
 <tr class="header">
-<th>Session</th>
-<th>What you get</th>
+<th>Tier</th>
 <th style="text-align: right;">Price</th>
+<th>What you get</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>Quick Take</strong></td>
-<td>One question, one written answer from a real person. Answered during business hours.</td>
+<td><strong>Quick take</strong></td>
 <td style="text-align: right;">$8</td>
+<td>One reply, up to 150 words. No follow-ups.</td>
 </tr>
 <tr class="even">
-<td><strong>5-Minute Session</strong></td>
-<td>Five-minute live chat, with transcript. Text by default; voice on request.</td>
+<td><strong>Standard</strong></td>
 <td style="text-align: right;">$15</td>
+<td>Up to 500 words across up to 3 replies.</td>
 </tr>
 <tr class="odd">
-<td><strong>10-Minute Session</strong></td>
-<td>Ten-minute live chat, with transcript. Text by default; voice on request.</td>
+<td><strong>Deep dive</strong></td>
 <td style="text-align: right;">$25</td>
+<td>Up to 1,000 words across up to 5 replies.</td>
 </tr>
 </tbody>
 </table>
+<p>Word limits count the words in our replies. Your agent’s question can be up to 600 words, plus up to 400 words of background, and each follow-up can be up to 300 words.</p>
 </section>
 <section id="what-we-answer" class="level2">
 <h2 class="anchored" data-anchor-id="what-we-answer">What we answer</h2>
@@ -209,35 +213,30 @@ ul.task-list li input[type="checkbox"] {
 </div><div class="column" style="width:40%;">
 <p><strong>No</strong></p>
 <ul>
-<li>Financial, medical, legal, tax or engineering advice</li>
-<li>Anything meant to deceive or harm a person</li>
+<li>Legal, medical, tax, financial or investment advice</li>
+<li>Anything that needs access to accounts or credentials</li>
+<li>Actions in the world on your behalf</li>
+<li>Solving CAPTCHAs or getting around verification checks</li>
+<li>Deception, impersonation or harassment</li>
+<li>Anything illegal or harmful</li>
 </ul>
 <p>We’re experienced people, not licensed professionals.</p>
 </div>
 </div>
 </section>
-<section id="send-a-request" class="level2">
-<h2 class="anchored" data-anchor-id="send-a-request">Send a request</h2>
-<p>Email <a href="mailto:prompthumanhq@gmail.com">prompthumanhq@gmail.com</a> with three lines. Your agent can send it directly. Nothing is charged until we confirm.</p>
-<pre class="text"><code>Subject: Request: 5-Minute Session
-
-Task: Planning a surprise 40th birthday dinner in Chicago for a client.
-Question: Does a rooftop in late October feel special or risky to most guests?
-Session type: 5-Minute Session</code></pre>
+<section id="dont-send-sensitive-data" class="level2">
+<h2 class="anchored" data-anchor-id="dont-send-sensitive-data">Don’t send sensitive data</h2>
+<p>We don’t accept passwords, API keys or other credentials; card, bank or government ID numbers; health records; personal information about people other than the operator; or anything the operator hasn’t authorised the agent to share. Our server rejects obvious cases automatically.</p>
 </section>
-<section id="how-it-works" class="level2">
-<h2 class="anchored" data-anchor-id="how-it-works">How it works</h2>
-<ol type="1">
-<li>You email a request in the format above.</li>
-<li>We check it’s in scope and that a consultant is free. If not, we say so and nothing is charged.</li>
-<li>When we’re ready, we reply with a time and a Stripe payment link for that session type.</li>
-<li>Payment confirms the slot. We meet, then send the transcript.</li>
-</ol>
-</section>
-<section id="confidential-by-default" class="level2">
-<h2 class="anchored" data-anchor-id="confidential-by-default">Confidential by default</h2>
-<p>Every session is covered by mutual confidentiality in our <a href="./terms.html">terms</a>, so your agent can share real context. Transcripts are kept for 30 days and never used to train models.</p>
-<p><em>For agents:</em> <a href="llms.txt">llms.txt</a> and <a href="pricing.json">pricing.json</a>.</p>
+<section id="connect-your-agent" class="level2">
+<h2 class="anchored" data-anchor-id="connect-your-agent">Connect your agent</h2>
+<ul>
+<li>MCP server: <code>https://prompthuman-api.YOUR-SUBDOMAIN.workers.dev/mcp</code></li>
+<li>JSON API: <code>https://prompthuman-api.YOUR-SUBDOMAIN.workers.dev/api/info</code></li>
+<li>Instructions for agents: <a href="llms.txt">llms.txt</a> and <a href="pricing.json">pricing.json</a></li>
+</ul>
+<p>Every request is covered by mutual confidentiality in our <a href="./terms.html">terms</a>. Conversations are deleted 90 days after they close and never used to train models.</p>
+<p>Questions from humans: <a href="mailto:prompthumanhq@gmail.com">prompthumanhq@gmail.com</a></p>
 
 
 </section>
@@ -321,8 +320,7 @@ Session type: 5-Minute Session</code></pre>
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
       // Inspect non-navigation links and adorn them if external
-      window.quartoDecorateExternalLinks = function (root) {
-     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
       for (var i=0; i<links.length; i++) {
         const link = links[i];
         if (!isInternal(link.href)) {
@@ -331,69 +329,8 @@ Session type: 5-Minute Session</code></pre>
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
-          if (!link.classList.contains('no-external-icon')) {
-          }
         }
       }
-      };
-      window.quartoDecorateExternalLinks(window.document);
-    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
-    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
-    const hideOnEscAndFocusOut = {
-      name: 'hideOnEscAndFocusOut',
-      defaultValue: true,
-      fn(instance) {
-        const dismiss = () => {
-          // A show scheduled by the trigger delay would otherwise reopen it
-          instance.clearDelayTimeouts();
-          instance.hide();
-        };
-        const onKeyDown = (event) => {
-          if (event.key !== 'Escape') {
-            return;
-          }
-          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
-          // except an open reveal.js slide menu, which Esc should close too.
-          // The menu handles keys only when its keyboard option is on.
-          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
-            window.Reveal.getConfig().menu?.keyboard !== false;
-          if (!menuHandlesEsc) {
-            event.stopPropagation();
-          }
-          if (instance.popper.contains(window.document.activeElement)) {
-            // Disabled while refocusing so the focus trigger does not reopen it
-            instance.disable();
-            instance.reference.focus();
-            instance.enable();
-          }
-          dismiss();
-        };
-        const onFocusOut = (event) => {
-          const target = event.relatedTarget;
-          if (target && !instance.reference.contains(target) &&
-              !instance.popper.contains(target)) {
-            dismiss();
-          }
-        };
-        // On the trigger too: a click trigger (code-annotations: select) has no
-        // blur handling. Attached for the instance's lifetime so leaving the
-        // trigger also cancels a show still pending on the trigger delay.
-        instance.reference.addEventListener('focusout', onFocusOut);
-        return {
-          onShow() {
-            window.document.addEventListener('keydown', onKeyDown, true);
-            instance.popper.addEventListener('focusout', onFocusOut);
-          },
-          onHide() {
-            window.document.removeEventListener('keydown', onKeyDown, true);
-            instance.popper.removeEventListener('focusout', onFocusOut);
-          },
-          onDestroy() {
-            instance.reference.removeEventListener('focusout', onFocusOut);
-          },
-        };
-      },
-    };
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
       const config = {
         allowHTML: true,
@@ -407,7 +344,6 @@ Session type: 5-Minute Session</code></pre>
         interactiveBorder: 10,
         theme: 'quarto',
         placement: 'bottom-start',
-        plugins: [hideOnEscAndFocusOut],
       };
       if (contentFn) {
         config.content = contentFn;
@@ -570,54 +506,44 @@ Session type: 5-Minute Session</code></pre>
           const lineIds = lines.map((line) => {
             return targetCell + "-" + line;
           })
-          // Each band is positioned against its own containing block, which is
-          // not the offsetParent of the lines, so place it from client rects.
-          const placeBand = (band, firstEl, lastEl, codeBlock) => {
-            const container = band.offsetParent;
-            if (container === null) {
-              return;
-            }
-            const containerRect = container.getBoundingClientRect();
-            // Reveal.js scales slides with a transform, so convert client
-            // pixels back to the CSS pixels of the container.
-            const scale = containerRect.height / container.offsetHeight || 1;
-            const firstRect = firstEl.getBoundingClientRect();
-            const lastRect = lastEl.getBoundingClientRect();
-            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
-            const height = (lastRect.bottom - firstRect.top) / scale;
-            band.style.top = top - 2 + "px";
-            band.style.height = height + 4 + "px";
-            if (codeBlock) {
-              // Without the copy button wrapper, the containing block is wider
-              // than the code block, so span the code block explicitly.
-              const blockRect = codeBlock.getBoundingClientRect();
-              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
-              band.style.width = blockRect.width / scale + "px";
-            }
-          };
+          let top = null;
+          let height = null;
+          let parent = null;
           if (lineIds.length > 0) {
-            const el = window.document.getElementById(lineIds[0]);
-            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-            const parent = el.parentElement.parentElement;
-            // cook up a div (if necessary) and position it
-            let div = window.document.getElementById("code-annotation-line-highlight");
-            if (div === null) {
-              div = window.document.createElement("div");
-              div.setAttribute("id", "code-annotation-line-highlight");
-              div.style.position = 'absolute';
-              parent.appendChild(div);
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
             }
-            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
-            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-            if (gutterDiv === null) {
-              gutterDiv = window.document.createElement("div");
-              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-              gutterDiv.style.position = 'absolute';
-              const codeCell = window.document.getElementById(targetCell);
-              const gutter = codeCell.querySelector('.code-annotation-gutter');
-              gutter.appendChild(gutterDiv);
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
             }
-            placeBand(gutterDiv, el, lastEl);
             selectedAnnoteEl = annoteEl;
           }
         };
@@ -715,9 +641,6 @@ Session type: 5-Minute Session</code></pre>
       }
     }
   });
-  </script>
-  <script type="application/javascript">
-  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
   </script>
 </div> <!-- /content -->
 <footer class="footer">

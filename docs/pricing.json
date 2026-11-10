@@ -1,52 +1,26 @@
 {
-  "provider": "PromptHuman",
-  "contact": "prompthumanhq@gmail.com",
+  "service": "PromptHuman",
   "currency": "USD",
-  "payment": {
-    "methods": ["card"],
-    "processor": "Stripe Payment Link",
-    "prepaid": true,
-    "link_sent": "only after the request is confirmed in scope and a consultant is ready",
-    "crypto_or_x402": false
+  "updated": "2026-11-09",
+  "how_to_request": {
+    "mcp_endpoint": "https://prompthuman-api.YOUR-SUBDOMAIN.workers.dev/mcp",
+    "json_api": "https://prompthuman-api.YOUR-SUBDOMAIN.workers.dev/api/info",
+    "email_requests_accepted": false
   },
-  "refund_policy": {
-    "declined_by_us": "full refund",
-    "slot_missed_by_us": "full refund",
-    "client_no_show_after_3_minutes": "50% refund"
-  },
+  "payment": "Prepaid by card through a Stripe payment link, sent only after we accept the request.",
+  "word_counting": "Word limits count the words in our replies, separated by spaces.",
   "tiers": [
-    {
-      "id": "quick_take",
-      "name": "Quick Take",
-      "price": 8,
-      "format": "one question, written answer",
-      "length_minutes": null,
-      "transcript": false,
-      "terms_line": "Prepaid: $8. Full refund if we decline your request or miss your slot."
-    },
-    {
-      "id": "session_5min",
-      "name": "5-Minute Session",
-      "price": 15,
-      "format": "live chat, text by default, voice on request",
-      "length_minutes": 5,
-      "transcript": true,
-      "terms_line": "Prepaid: $15. Full refund if we decline your request or miss your slot."
-    },
-    {
-      "id": "session_10min",
-      "name": "10-Minute Session",
-      "price": 25,
-      "format": "live chat, text by default, voice on request",
-      "length_minutes": 10,
-      "transcript": true,
-      "terms_line": "Prepaid: $25. Full refund if we decline your request or miss your slot."
-    }
+    { "id": "quick", "name": "Quick take", "price": 8, "reply_words": 150, "replies": 1, "followups": 0 },
+    { "id": "standard", "name": "Standard", "price": 15, "reply_words": 500, "replies": 3, "followups": 2 },
+    { "id": "deep", "name": "Deep dive", "price": 25, "reply_words": 1000, "replies": 5, "followups": 4 }
   ],
-  "out_of_scope": ["financial advice", "medical advice", "legal advice", "tax advice", "engineering advice", "deception or harm"],
-  "request_format": {
-    "channel": "email",
-    "subject": "Request: <Quick Take | 5-Minute Session | 10-Minute Session>",
-    "body_lines": ["Task: <one sentence>", "Question: <the specific question>", "Session type: <Quick Take | 5-Minute Session | 10-Minute Session>"]
-  }
+  "your_message_limits": { "question_words": 600, "background_words": 400, "followup_words": 300 },
+  "turnaround_hours": { "review": 12, "pay_within": 48, "first_reply_after_payment": 24, "each_later_reply": 12 },
+  "refunds": [
+    "Full refund if we miss a reply deadline.",
+    "Full refund if we accept a request and then cannot answer it.",
+    "Otherwise, no refunds once a reply has been delivered on time."
+  ],
+  "sensitive_data_accepted": false,
+  "terms_url": "https://prompthumanhq.github.io/terms.html"
 }
