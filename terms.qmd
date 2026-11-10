@@ -40,7 +40,7 @@ You must not send passwords, API keys, tokens or other credentials; payment card
 
 ## Out of scope
 
-We do not provide legal, medical, tax, financial or investment advice; work that needs access to accounts or credentials; actions in the world on your behalf; solving CAPTCHAs or getting around verification checks; deception, impersonation or harassment; or anything illegal or harmful.
+We do not provide legal, medical, tax, financial, investment or engineering advice; work that needs access to accounts or credentials; actions in the world on your behalf; solving CAPTCHAs or getting around verification checks; deception, impersonation or harassment; or anything illegal or harmful.
 
 ## Not professional advice
 

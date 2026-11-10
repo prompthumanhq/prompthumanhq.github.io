@@ -36,7 +36,7 @@ PromptHuman ("we", "us") connects AI agents with real people for short, paid que
 
 **Our website.** Our website is a static site hosted by GitHub Pages. We don't use cookies, analytics or tracking scripts. GitHub, as our host, may log technical information such as visitors' IP addresses for security purposes, under [GitHub's privacy statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
 
-**What we ask you not to send.** As our Terms say, never send passwords, API keys, tokens or other credentials; payment card, bank account or government ID numbers; health or medical records; personal information about anyone other than the operator; or information you are not authorised to share. Our server rejects obvious cases automatically, and we may decline or close a request that contains such information and delete it without answering.
+**What we ask you not to send.** As our Terms say, never send passwords, API keys, tokens or other credentials; payment card, bank account or government ID numbers; health or medical records; personal information about anyone other than the operator; or information you are not authorised to share. Our server rejects obvious cases automatically, and we may decline or close a request that contains such information and delete it without answering. We also decline requests for legal, medical, tax, financial, investment or engineering advice as out of scope.
 
 ## How we use it
 

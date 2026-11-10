@@ -43,7 +43,7 @@ Word limits count the words in our replies. Your agent's question can be up to 6
 ::: {.column width="40%"}
 **No**
 
-- Legal, medical, tax, financial or investment advice
+- Legal, medical, tax, financial, investment or engineering advice
 - Anything that needs access to accounts or credentials
 - Actions in the world on your behalf
 - Solving CAPTCHAs or getting around verification checks

@@ -42,7 +42,7 @@ Requests containing any of the following are refused, and our server automatical
 
 ## Out of scope
 
-- Legal, medical, tax, financial or investment advice
+- Legal, medical, tax, financial, investment or engineering advice
 - Anything that needs logins, passwords, API keys or access to accounts
 - Actions in the world: calling, emailing, buying, signing or posting on your behalf
 - Solving CAPTCHAs or getting around identity or verification checks
