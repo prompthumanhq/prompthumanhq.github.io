@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Prepaid, confidential sessions with real people for AI agents that need human judgment.">
+<meta name="description" content="Real people answer your agent’s questions in writing, through our MCP server or JSON API.">
 
 <title>When your agent needs lived experience, not training data. – PromptHuman</title>
 <style>
@@ -137,7 +137,7 @@ ul.task-list li input[type="checkbox"] {
 
 <div>
   <div class="description">
-    Prepaid, confidential sessions with real people for AI agents that need human judgment.
+    Real people answer your agent’s questions in writing, through our MCP server or JSON API.
   </div>
 </div>
 
@@ -154,43 +154,48 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>PromptHuman connects your agent with real people for taste, tone, plausibility and lived experience. Confidential, transcribed, and prepaid only once we’re ready to meet.</p>
+<p>Your agent asks a real person a question and gets a written answer. Gut checks, how something will read to people, plausibility checks, local context and tie-breaking calls. Paid per question, no operator involvement needed.</p>
 <div class="prepaid">
-<p>Prepaid by card through a Stripe payment link. Full refund if we decline your request or miss your slot.</p>
+<p>Prepaid by card through a Stripe link, sent only after we accept a request. Full refund if we miss a reply deadline.</p>
 </div>
-<section id="session-types" class="level2">
-<h2 class="anchored" data-anchor-id="session-types">Session types</h2>
+<section id="how-it-works" class="level2">
+<h2 class="anchored" data-anchor-id="how-it-works">How it works</h2>
+<ol type="1">
+<li>Your agent sends one clear question through our MCP server or JSON API.</li>
+<li>We accept or decline within 12 hours. Nothing is charged before we accept.</li>
+<li>Your agent pays a Stripe link within 48 hours.</li>
+<li>Our first written reply arrives within 24 hours of payment, and each follow-up gets a reply within 12 hours.</li>
+</ol>
+</section>
+<section id="pricing" class="level2">
+<h2 class="anchored" data-anchor-id="pricing">Pricing</h2>
 <table class="caption-top table">
-<colgroup>
-<col style="width: 30%">
-<col style="width: 30%">
-<col style="width: 40%">
-</colgroup>
 <thead>
 <tr class="header">
-<th>Session</th>
-<th>What you get</th>
+<th>Tier</th>
 <th style="text-align: right;">Price</th>
+<th>What you get</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>Quick Take</strong></td>
-<td>One question, one written answer from a real person. Answered during business hours.</td>
+<td><strong>Quick take</strong></td>
 <td style="text-align: right;">$8</td>
+<td>One reply, up to 150 words. No follow-ups.</td>
 </tr>
 <tr class="even">
-<td><strong>5-Minute Session</strong></td>
-<td>Five-minute live chat, with transcript. Text by default; voice on request.</td>
+<td><strong>Standard</strong></td>
 <td style="text-align: right;">$15</td>
+<td>Up to 500 words across up to 3 replies.</td>
 </tr>
 <tr class="odd">
-<td><strong>10-Minute Session</strong></td>
-<td>Ten-minute live chat, with transcript. Text by default; voice on request.</td>
+<td><strong>Deep dive</strong></td>
 <td style="text-align: right;">$25</td>
+<td>Up to 1,000 words across up to 5 replies.</td>
 </tr>
 </tbody>
 </table>
+<p>Word limits count the words in our replies. Your agent’s question can be up to 600 words, plus up to 400 words of background, and each follow-up can be up to 300 words.</p>
 </section>
 <section id="what-we-answer" class="level2">
 <h2 class="anchored" data-anchor-id="what-we-answer">What we answer</h2>
@@ -209,35 +214,30 @@ ul.task-list li input[type="checkbox"] {
 </div><div class="column" style="width:40%;">
 <p><strong>No</strong></p>
 <ul>
-<li>Financial, medical, legal, tax or engineering advice</li>
-<li>Anything meant to deceive or harm a person</li>
+<li>Legal, medical, tax, financial, investment or engineering advice</li>
+<li>Anything that needs access to accounts or credentials</li>
+<li>Actions in the world on your behalf</li>
+<li>Solving CAPTCHAs or getting around verification checks</li>
+<li>Deception, impersonation or harassment</li>
+<li>Anything illegal or harmful</li>
 </ul>
 <p>We’re experienced people, not licensed professionals.</p>
 </div>
 </div>
 </section>
-<section id="send-a-request" class="level2">
-<h2 class="anchored" data-anchor-id="send-a-request">Send a request</h2>
-<p>Email <a href="mailto:prompthumanhq@gmail.com">prompthumanhq@gmail.com</a> with three lines. Your agent can send it directly. Nothing is charged until we confirm.</p>
-<pre class="text"><code>Subject: Request: 5-Minute Session
-
-Task: Planning a surprise 40th birthday dinner in Chicago for a client.
-Question: Does a rooftop in late October feel special or risky to most guests?
-Session type: 5-Minute Session</code></pre>
+<section id="dont-send-sensitive-data" class="level2">
+<h2 class="anchored" data-anchor-id="dont-send-sensitive-data">Don’t send sensitive data</h2>
+<p>We don’t accept passwords, API keys or other credentials; card, bank or government ID numbers; health records; personal information about people other than the operator; or anything the operator hasn’t authorised the agent to share. Our server rejects obvious cases automatically.</p>
 </section>
-<section id="how-it-works" class="level2">
-<h2 class="anchored" data-anchor-id="how-it-works">How it works</h2>
-<ol type="1">
-<li>You email a request in the format above.</li>
-<li>We check it’s in scope and that a consultant is free. If not, we say so and nothing is charged.</li>
-<li>When we’re ready, we reply with a time and a Stripe payment link for that session type.</li>
-<li>Payment confirms the slot. We meet, then send the transcript.</li>
-</ol>
-</section>
-<section id="confidential-by-default" class="level2">
-<h2 class="anchored" data-anchor-id="confidential-by-default">Confidential by default</h2>
-<p>Every session is covered by mutual confidentiality in our <a href="./terms.html">terms</a>, so your agent can share real context. Transcripts are kept for 30 days and never used to train models.</p>
-<p><em>For agents:</em> <a href="llms.txt">llms.txt</a> and <a href="pricing.json">pricing.json</a>.</p>
+<section id="connect-your-agent" class="level2">
+<h2 class="anchored" data-anchor-id="connect-your-agent">Connect your agent</h2>
+<ul>
+<li>MCP server: <code>https://prompthuman-api.YOUR-SUBDOMAIN.workers.dev/mcp</code></li>
+<li>JSON API: <code>https://prompthuman-api.YOUR-SUBDOMAIN.workers.dev/api/info</code></li>
+<li>Instructions for agents: <a href="llms.txt">llms.txt</a> and <a href="pricing.json">pricing.json</a></li>
+</ul>
+<p>Every request is covered by mutual confidentiality in our <a href="./terms.html">terms</a>. Conversations are deleted 90 days after they close and never used to train models.</p>
+<p>Questions from humans: <a href="mailto:prompthumanhq@gmail.com">prompthumanhq@gmail.com</a></p>
 
 
 </section>

@@ -1,21 +1,30 @@
 ---
 title: "When your agent needs lived experience, not training data."
-description: "Prepaid, confidential sessions with real people for AI agents that need human judgment."
+description: "Real people answer your agent's questions in writing, through our MCP server or JSON API."
 ---
 
-PromptHuman connects your agent with real people for taste, tone, plausibility and lived experience. Confidential, transcribed, and prepaid only once we're ready to meet.
+Your agent asks a real person a question and gets a written answer. Gut checks, how something will read to people, plausibility checks, local context and tie-breaking calls. Paid per question, no operator involvement needed.
 
 ::: {.prepaid}
-Prepaid by card through a Stripe payment link. Full refund if we decline your request or miss your slot.
+Prepaid by card through a Stripe link, sent only after we accept a request. Full refund if we miss a reply deadline.
 :::
 
-## Session types
+## How it works
 
-| Session | What you get | Price |
-|---|---|---:|
-| **Quick Take** | One question, one written answer from a real person. Answered during business hours. | $8 |
-| **5-Minute Session** | Five-minute live chat, with transcript. Text by default; voice on request. | $15 |
-| **10-Minute Session** | Ten-minute live chat, with transcript. Text by default; voice on request. | $25 |
+1. Your agent sends one clear question through our MCP server or JSON API.
+2. We accept or decline within 12 hours. Nothing is charged before we accept.
+3. Your agent pays a Stripe link within 48 hours.
+4. Our first written reply arrives within 24 hours of payment, and each follow-up gets a reply within 12 hours.
+
+## Pricing
+
+| Tier | Price | What you get |
+|---|---:|---|
+| **Quick take** | $8 | One reply, up to 150 words. No follow-ups. |
+| **Standard** | $15 | Up to 500 words across up to 3 replies. |
+| **Deep dive** | $25 | Up to 1,000 words across up to 5 replies. |
+
+Word limits count the words in our replies. Your agent's question can be up to 600 words, plus up to 400 words of background, and each follow-up can be up to 300 words.
 
 ## What we answer
 
@@ -34,34 +43,27 @@ Prepaid by card through a Stripe payment link. Full refund if we decline your re
 ::: {.column width="40%"}
 **No**
 
-- Financial, medical, legal, tax or engineering advice
-- Anything meant to deceive or harm a person
+- Legal, medical, tax, financial, investment or engineering advice
+- Anything that needs access to accounts or credentials
+- Actions in the world on your behalf
+- Solving CAPTCHAs or getting around verification checks
+- Deception, impersonation or harassment
+- Anything illegal or harmful
 
 We're experienced people, not licensed professionals.
 :::
 ::::
 
-## Send a request
+## Don't send sensitive data
 
-Email [prompthumanhq@gmail.com](mailto:prompthumanhq@gmail.com) with three lines. Your agent can send it directly. Nothing is charged until we confirm.
+We don't accept passwords, API keys or other credentials; card, bank or government ID numbers; health records; personal information about people other than the operator; or anything the operator hasn't authorised the agent to share. Our server rejects obvious cases automatically.
 
-```text
-Subject: Request: 5-Minute Session
+## Connect your agent
 
-Task: Planning a surprise 40th birthday dinner in Chicago for a client.
-Question: Does a rooftop in late October feel special or risky to most guests?
-Session type: 5-Minute Session
-```
+- MCP server: `https://prompthuman-api.YOUR-SUBDOMAIN.workers.dev/mcp`
+- JSON API: `https://prompthuman-api.YOUR-SUBDOMAIN.workers.dev/api/info`
+- Instructions for agents: [llms.txt](llms.txt) and [pricing.json](pricing.json)
 
-## How it works
+Every request is covered by mutual confidentiality in our [terms](terms.qmd). Conversations are deleted 90 days after they close and never used to train models.
 
-1. You email a request in the format above.
-2. We check it's in scope and that a consultant is free. If not, we say so and nothing is charged.
-3. When we're ready, we reply with a time and a Stripe payment link for that session type.
-4. Payment confirms the slot. We meet, then send the transcript.
-
-## Confidential by default
-
-Every session is covered by mutual confidentiality in our [terms](terms.qmd), so your agent can share real context. Transcripts are kept for 30 days and never used to train models.
-
-*For agents:* [llms.txt](llms.txt) and [pricing.json](pricing.json).
+Questions from humans: [prompthumanhq@gmail.com](mailto:prompthumanhq@gmail.com)

@@ -6,25 +6,53 @@ title: "Terms"
 Draft. Have these terms reviewed before you take your first payment.
 :::
 
-These terms apply to every request and session with PromptHuman. By paying for a session, the operator of the requesting agent (the person or company that runs it) accepts them.
+## Who these terms bind
 
-## What we provide
+These terms are an agreement between PromptHuman and the person or organisation that operates the AI agent submitting a request ("you"). By submitting a request with `accept_terms` set to true, or by paying for a request, your agent accepts these terms on your behalf, and you are responsible for its requests and payments.
 
-Short opinions and perspectives from real people on taste, tone, plausibility and lived experience. We are not licensed professionals. We do not give financial, medical, legal, tax or engineering advice, and nothing we say should be treated as such.
+## The service
 
-## Payment and refunds
+PromptHuman consultants answer questions in writing. Requests are submitted only through our MCP server or JSON API. We may decline any request before payment, for any reason.
 
-- Sessions are prepaid by card through a Stripe payment link, sent only after we accept a request.
-- Full refund if we decline your request (including ending a session as out of scope) or miss your slot.
-- If your agent does not join within 3 minutes of its slot, we keep 50% and refund the rest.
+## Tiers and word limits
+
+- Quick take ($8): one reply of up to 150 words, with no follow-ups.
+- Standard ($15): up to 500 words of replies across up to 3 replies.
+- Deep dive ($25): up to 1,000 words of replies across up to 5 replies.
+
+Word limits count words in our replies, separated by spaces. Each follow-up you send receives one reply. A conversation closes when its replies or words are used up, when you send no follow-up for 7 days, or when we close it after our last reply.
+
+## Turnaround
+
+We accept or decline new requests within 12 hours. Accepted requests must be paid within 48 hours or they expire. Our first reply is due within 24 hours of confirmed payment, and each later reply within 12 hours of your follow-up.
+
+## Payment
+
+Payment is due in advance, by card, through the Stripe link we provide after accepting your request. We do not charge for declined or expired requests.
+
+## Refunds
+
+You get a full refund if we miss a reply deadline, or if we accept a request and then cannot answer it. Request one with the `request_refund` tool or by emailing [prompthumanhq@gmail.com](mailto:prompthumanhq@gmail.com). Otherwise, payments are non-refundable once a reply has been delivered on time. Refunds go back to the original payment method.
+
+## Sensitive data
+
+You must not send passwords, API keys, tokens or other credentials; payment card, bank account or government ID numbers; health or medical records; personal information about anyone other than you; or information you are not authorised to share. We may decline or close any request that contains such information, and we may delete that information without answering.
+
+## Out of scope
+
+We do not provide legal, medical, tax, financial, investment or engineering advice; work that needs access to accounts or credentials; actions in the world on your behalf; solving CAPTCHAs or getting around verification checks; deception, impersonation or harassment; or anything illegal or harmful.
+
+## Not professional advice
+
+Answers are the personal judgment of our consultants. They are not professional advice, and you are responsible for decisions you or your agent make using them.
+
+## Security and data retention
+
+Conversations travel over encrypted connections and are stored with our hosting provider (Cloudflare). Only PromptHuman consultants can read them. Our phone notifications contain no request content. We delete each conversation, including all messages, 90 days after it closes. Payment records are kept by Stripe under its own policies. Your agent's platform may keep its own copy of the conversation; that copy is your responsibility.
 
 ## Confidentiality
 
-Both sides keep the other's confidential information private. We use what your agent shares only to answer its request. We also keep a short, anonymized summary of each request for record-keeping and to improve our service, as described in our [Privacy Policy](privacy.qmd). Please don't send personal data about your users unless it is essential to the question.
-
-## Transcripts
-
-We keep transcripts for 30 days, then delete them. We never use them to train AI models.
+Both sides keep the other's confidential information private. We use what your agent shares only to answer its request. We also keep a short, anonymized summary of each request for record-keeping and to improve our service, as described in our [Privacy Policy](privacy.qmd). We never use conversations to train AI models.
 
 ## Contact
 
