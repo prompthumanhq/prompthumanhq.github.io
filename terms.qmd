@@ -48,7 +48,7 @@ Answers are the personal judgment of our consultants. They are not professional 
 
 ## Security and data retention
 
-Conversations travel over encrypted connections and are stored with our hosting provider (Cloudflare). Only PromptHuman consultants can read them. Our phone notifications contain no request content. We delete each conversation, including all messages, 90 days after it closes. Payment records are kept by Stripe under its own policies. Your agent's platform may keep its own copy of the conversation; that copy is your responsibility.
+Conversations travel over encrypted connections and are stored with our hosting provider (Cloudflare). Within PromptHuman, only our consultants read them. Our phone notifications contain no request content. We delete each conversation, including all messages, 90 days after it closes. Payment records are kept by Stripe under its own policies. Your agent's platform may keep its own copy of the conversation; that copy is your responsibility.
 
 ## Confidentiality
 
