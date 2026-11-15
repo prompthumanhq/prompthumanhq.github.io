@@ -188,10 +188,10 @@ Warning
 <ul>
 <li>We collect what we need to answer requests, deliver written replies and take payment.</li>
 <li>Conversations (requests, follow-ups and our replies) are kept separately, read within PromptHuman only by us and our consultants, and deleted 90 days after the conversation closes.</li>
-<li>For the long term, we keep only an anonymized service log: a short, cleaned-up summary of each question with no names, contact details or company names, plus administrative details such as dates and tier.</li>
+<li>For the long term, we keep only an anonymized service log: a short summary, in our own words, of each question we accept, with no names, contact details or company names, plus administrative details such as dates and tier, and a client code that links one payer’s requests without recording who they are.</li>
 <li>We never log the content of out-of-scope requests.</li>
 <li>We don’t sell your information, show ads, or use your conversations to train AI models.</li>
-<li>Questions or deletion requests: <a href="mailto:prompthumanhq@gmail.com">prompthumanhq@gmail.com</a>.</li>
+<li>Questions or deletion requests: <a href="mailto:prompthumanhq@gmail.com">prompthumanhq@gmail.com</a>. Send a deletion request from the email address you paid with.</li>
 </ul>
 </section>
 <section id="who-this-covers" class="level2">
@@ -202,9 +202,10 @@ Warning
 <section id="what-we-collect" class="level2">
 <h2 class="anchored" data-anchor-id="what-we-collect">What we collect</h2>
 <p><strong>Requests and conversations.</strong> Agents submit requests only through our MCP server or JSON API. We receive the question, any background, the tier chosen, follow-up messages, and technical details needed to run the service, such as when each message arrived. An agent may also tell us its own name, your name and a contact email address; all three are optional. We write replies that we return to your agent through the same channel.</p>
+<p><strong>Optional details about the agent.</strong> An agent may also tell us, by choosing from fixed lists, whether it works for a company or an individual, what platform it runs on, and how it found us. It may add a short note in its own words. All of these are optional, and we ask agents to answer only from what they already know. The three fixed-list answers go into the service log described below. The note stays with the conversation and is deleted with it.</p>
 <p><strong>Internet addresses.</strong> To limit abuse, our server keeps a scrambled fingerprint of the internet (IP) address each new request comes from, and uses it only to cap how many requests one address can send per hour. The fingerprint can’t be turned back into the address, we never store the address itself, and the fingerprint is erased about a day after the request. Cloudflare, as our host, also keeps short-lived technical logs of requests to our server (not their content) under <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare’s privacy policy</a>.</p>
 <p><strong>Email.</strong> If a person emails us with a question about the service or a refund, we receive the sending email address and the message.</p>
-<p><strong>Payments.</strong> Requests are paid by card through Stripe. Through Stripe we receive your email address, your name or business name if you provide one, your billing country and postal code, the request ID attached to your payment link, whether you ticked the box agreeing to our Terms, and the amount and status of the payment. We never see or store full card numbers.</p>
+<p><strong>Payments.</strong> Requests are paid by card through Stripe. Through Stripe we receive your email address, your name or business name if you provide one, your billing country and postal code, the request ID attached to your payment link, whether you ticked the box agreeing to our Terms, and the amount and status of the payment. We never see or store full card numbers. When a payment is confirmed, our server uses the email address once to work out a client code (see <a href="#the-service-log">The service log</a>) and does not store the address itself.</p>
 <p><strong>Phone and voicemail.</strong> If you call or text our business number, we receive your number and any message you leave.</p>
 <p><strong>Our website.</strong> Our website is a static site hosted by GitHub Pages. We don’t use cookies, analytics or tracking scripts. GitHub, as our host, may log technical information such as visitors’ IP addresses for security purposes, under <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub’s privacy statement</a>.</p>
 <p><strong>What we ask you not to send.</strong> As our Terms say, never send passwords, API keys, tokens or other credentials; payment card, bank account or government ID numbers; health or medical records; personal information about anyone other than the operator; or information you are not authorised to share. Our server rejects obvious cases automatically, and we may decline or close a request that contains such information and delete it without answering. We also decline requests for legal, medical, tax, financial, investment or engineering advice as out of scope.</p>
@@ -262,12 +263,14 @@ Warning
 <h2 class="anchored" data-anchor-id="the-service-log">The service log</h2>
 <p>To understand what agents need and improve our service, we keep a log of every request. It contains:</p>
 <ul>
-<li>a short summary of the question, written by us, with names, contact details, company names and identifying specifics removed;</li>
-<li>a request ID and a client code, which let us recognize repeat clients without recording who they are;</li>
-<li>administrative details, such as how the agent found us, the agent platform, the type of operator (company, individual or unknown), the question category, the tier and price, the dates and times a request was received, reviewed and answered, the number of replies and words used, payment and refund status, and whether our answer changed the agent’s next step.</li>
+<li>for each request we accept, a short summary of the question (up to 40 words), written by one of us in our own words, leaving out names, contact details, company names and identifying specifics. Our server refuses a summary that contains an email address, a web link, a phone number or a phrase copied from the request;</li>
+<li>a request ID and, for paid requests, a client code. The client code is made by scrambling the email address you paid with, using a secret key that only our server holds. We store the code, never the address. The same address always gives the same code, which lets us recognize repeat clients without recording who they are;</li>
+<li>administrative details, such as how the agent found us, the agent platform, the type of operator (company, individual or unknown), the question category, the tier and price, the dates and times a request was received, reviewed and answered, the number of replies and words used, payment and refund status, and the agent’s feedback on whether our answer was helpful and whether it changed the agent’s next step.</li>
 </ul>
-<p>The log never contains raw request text, names, email addresses, phone numbers, company names or payment details. If we decline a request as out of scope, the log records only that it was declined and the general reason, such as “medical”, never what the request said.</p>
-<p>The key that links a client code to a client is held only in our conversation and payment records, which follow the retention periods above. We may share aggregate statistics from the log, such as how many requests fall into each category, but never in a way that could identify a client or a specific request.</p>
+<p>The log never contains raw request text, names, email addresses, phone numbers, company names or payment details. If we decline a request, the log records only that it was declined and which general reason we chose, such as “out of scope” or “unclear”, never what the request said or any note we sent back.</p>
+<p>A client code can’t be turned back into an email address. It can be matched to you only by someone who has both our secret key and your email address, which is how we find your records when you ask us to delete them. Because all of one payer’s entries carry the same code, those entries are linked to each other.</p>
+<p>We and our consultants download copies of the log to study it. Our server keeps a record of every download (who, when and which file), so that if you ask us to remove your entries we can also remove them from those copies.</p>
+<p>We may share aggregate statistics from the log, such as how many requests fall into each category, but never in a way that could identify a client or a specific request.</p>
 </section>
 <section id="who-we-share-it-with" class="level2">
 <h2 class="anchored" data-anchor-id="who-we-share-it-with">Who we share it with</h2>
@@ -290,10 +293,12 @@ Warning
 <li>tell you what personal information we hold about you and give you a copy;</li>
 <li>correct information that’s wrong;</li>
 <li>delete your conversations before the 90 days are up;</li>
-<li>remove the entry for your request from our service log;</li>
+<li>remove the entries for your requests from our service log;</li>
 <li>stop using your information for a particular purpose.</li>
 </ul>
-<p>Email <a href="mailto:prompthumanhq@gmail.com">prompthumanhq@gmail.com</a> and include your conversation ID so we can confirm the request is yours. We’ll respond within 30 days. We may need to keep payment records the law requires us to keep. The service log holds no names, contact details or request text, so there is nothing personal in it to hand over. Each entry does carry its request ID, so if you ask, we will remove your entry.</p>
+<p>Email <a href="mailto:prompthumanhq@gmail.com">prompthumanhq@gmail.com</a> from the email address you paid with. That address is how we find your records and confirm they are yours. We’ll reply to it and ask you to confirm before we delete anything, because deletion can’t be undone. If you never paid, or can no longer use the address you paid with, include your conversation ID instead.</p>
+<p>Tell us which you want: only your conversations and messages deleted, or your service log entries removed as well. If the address you paid with is shared, for example a company’s accounts mailbox, a request from it covers everyone who paid through it. We can’t delete a conversation while a refund or a payment on it is still being settled; we’ll tell you if that applies and delete it once it is.</p>
+<p>We’ll respond within 30 days. We may need to keep payment records the law requires us to keep. The service log holds no names, contact details or request text. Its entries are tied to you only through the client code, so we find them from your paying address, or from a conversation ID, and remove them if you ask.</p>
 </section>
 <section id="security" class="level2">
 <h2 class="anchored" data-anchor-id="security">Security</h2>
