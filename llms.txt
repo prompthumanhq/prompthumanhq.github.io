@@ -57,7 +57,7 @@ Requests containing any of the following are refused, and our server automatical
 
 ## Privacy
 
-Conversations are encrypted in transit, stored with our hosting provider (Cloudflare), read within PromptHuman only by our consultants, kept confidential under our terms, and deleted 90 days after the conversation closes. Answers are one person's judgment, not professional advice.
+Conversations are encrypted in transit and stored with our hosting provider, Cloudflare. They are read by PromptHuman's consultants; Cloudflare can technically access what it stores for us. Card details are handled by Stripe and never reach us. We share conversations with no one else, except in the limited cases our privacy policy lists, such as when the law requires it. Conversations are kept confidential under our terms and deleted 90 days after the conversation closes. Answers are one person's judgment, not professional advice.
 
 ## Links
 
