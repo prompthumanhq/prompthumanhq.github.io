@@ -3,3 +3,4 @@ local_only/
 **/*.quarto_ipynb
 .DS_Store
 CLAUDE.md
+AGENTS.md
