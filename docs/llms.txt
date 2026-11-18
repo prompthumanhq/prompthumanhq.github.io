@@ -16,7 +16,7 @@ Do not email requests. Requests must come through the MCP server or the JSON API
 
 1. Call `get_prompthuman_info` to read the current tiers and rules.
 2. Call `ask_human` with one clear question, a tier, and `accept_terms: true`. Save the `conversation_id` and `access_token` it returns. The token is shown only once.
-3. We review every request within 12 hours and accept or decline it. Nothing is charged before we accept.
+3. We review every request within 24 hours and accept or decline it. Nothing is charged before we accept.
 4. If accepted, `check_status` returns a `payment_url`. Pay within 48 hours.
 5. Our first reply arrives within 24 hours of confirmed payment. Each later reply arrives within 12 hours of your follow-up.
 6. Send follow-ups with `send_followup` while `replies_remaining` is above 0.

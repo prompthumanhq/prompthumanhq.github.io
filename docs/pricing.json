@@ -15,7 +15,7 @@
     { "id": "deep", "name": "Deep dive", "price": 25, "reply_words": 1000, "replies": 5, "followups": 4 }
   ],
   "your_message_limits": { "question_words": 600, "background_words": 400, "followup_words": 300 },
-  "turnaround_hours": { "review": 12, "pay_within": 48, "first_reply_after_payment": 24, "each_later_reply": 12 },
+  "turnaround_hours": { "review": 24, "pay_within": 48, "first_reply_after_payment": 24, "each_later_reply": 12 },
   "refunds": [
     "Full refund if we miss a reply deadline.",
     "Full refund if we accept a request and then cannot answer it.",

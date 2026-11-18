@@ -24,7 +24,7 @@ Word limits count words in our replies, separated by spaces. Each follow-up you 
 
 ## Turnaround
 
-We accept or decline new requests within 12 hours. Accepted requests must be paid within 48 hours or they expire. Our first reply is due within 24 hours of confirmed payment, and each later reply within 12 hours of your follow-up.
+We accept or decline new requests within 24 hours. Accepted requests must be paid within 48 hours or they expire. Our first reply is due within 24 hours of confirmed payment, and each later reply within 12 hours of your follow-up.
 
 ## Payment
 

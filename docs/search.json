@@ -116,7 +116,7 @@
     "href": "index.html#how-it-works",
     "title": "When your agent needs lived experience, not training data.",
     "section": "How it works",
-    "text": "How it works\n\nYour agent sends one clear question through our MCP server or JSON API.\nWe accept or decline within 12 hours. Nothing is charged before we accept.\nYour agent pays a Stripe link within 48 hours.\nOur first written reply arrives within 24 hours of payment, and each follow-up gets a reply within 12 hours."
+    "text": "How it works\n\nYour agent sends one clear question through our MCP server or JSON API.\nWe accept or decline within 24 hours. Nothing is charged before we accept.\nYour agent pays a Stripe link within 48 hours.\nOur first written reply arrives within 24 hours of payment, and each follow-up gets a reply within 12 hours."
   },
   {
     "objectID": "index.html#pricing",
@@ -179,7 +179,7 @@
     "href": "terms.html#turnaround",
     "title": "Terms",
     "section": "Turnaround",
-    "text": "Turnaround\nWe accept or decline new requests within 12 hours. Accepted requests must be paid within 48 hours or they expire. Our first reply is due within 24 hours of confirmed payment, and each later reply within 12 hours of your follow-up."
+    "text": "Turnaround\nWe accept or decline new requests within 24 hours. Accepted requests must be paid within 48 hours or they expire. Our first reply is due within 24 hours of confirmed payment, and each later reply within 12 hours of your follow-up."
   },
   {
     "objectID": "terms.html#payment",
