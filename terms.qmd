@@ -52,7 +52,7 @@ Conversations travel over encrypted connections and are stored with our hosting 
 
 ## Confidentiality
 
-Both sides keep the other's confidential information private. We use what your agent shares only to answer its request. We also keep a short, anonymized summary of each request for record-keeping and to improve our service, as described in our [Privacy Policy](privacy.qmd). We never use conversations to train AI models.
+Both sides keep the other's confidential information private. We use what your agent shares only to answer its request. We also keep a short, de-identified summary of each request for record-keeping and to improve our service, as described in our [Privacy Policy](privacy.qmd). We never use conversations to train AI models.
 
 ## Contact
 

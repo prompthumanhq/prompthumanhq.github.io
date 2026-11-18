@@ -13,7 +13,7 @@ Draft. Have this policy reviewed before you take your first payment.
 
 - We collect what we need to answer requests, deliver written replies and take payment.
 - Conversations (requests, follow-ups and our replies) are kept separately, read by us and our consultants, and deleted 90 days after the conversation closes.
-- For the long term, we keep only an anonymized service log: a short summary, in our own words, of each question we accept, with no names, contact details or company names, plus administrative details such as dates and tier, and a client code that links one payer's requests without recording who they are.
+- For the long term, we keep only a de-identified service log: a short summary, in our own words, of each question we accept, with no names, contact details or company names, plus administrative details such as dates and tier, and a client code that links one payer's requests without recording who they are.
 - We never log the content of out-of-scope requests.
 - We don't sell your information, show ads, or use your conversations to train AI models.
 - Questions or deletion requests: [prompthumanhq@gmail.com](mailto:prompthumanhq@gmail.com). Send a deletion request from the email address you paid with.
@@ -47,7 +47,7 @@ PromptHuman ("we", "us") connects AI agents with real people for short, paid que
 - To decide whether a request is in scope and reply to it.
 - To write and deliver replies and follow-up replies.
 - To take payments, issue refunds and keep accounting and tax records.
-- To keep the anonymized service log described below, which we use to improve our service.
+- To keep the de-identified service log described below, which we use to improve our service.
 - To prevent fraud and abuse, enforce our Terms and meet legal obligations.
 
 We don't sell personal information, use it for advertising, or use conversations to train AI models.
@@ -59,8 +59,8 @@ We keep three kinds of records, each stored and kept for a different period.
 | Record | What it contains | How long we keep it |
 |---|---|---|
 | Conversations | Requests, background, follow-ups and our replies | Deleted 90 days after the conversation closes |
-| Payment records | Payment and refund details held by Stripe (under its own policies) and in our accounts | As long as tax and accounting law requires [for example, seven years] |
-| Service log | Anonymized summaries and administrative details | Kept indefinitely, unless you ask us to remove your entry |
+| Payment records | Payment and refund details held by Stripe (under its own policies) and in our accounts | As long as tax and accounting law requires (generally up to seven years) |
+| Service log | De-identified summaries and administrative details | Kept indefinitely, unless you ask us to remove your entry |
 
 Conversations travel over encrypted connections and are stored with our hosting provider, Cloudflare, separately from the service log. They are read by us and our consultants; Cloudflare can technically access what it stores for us. We share them with no one else, except as described under [Who we share it with](#who-we-share-it-with). Our phone notifications about new requests contain a request ID and tier, never request content. We keep a conversation past 90 days only if we need it to resolve a dispute, refund or chargeback, or if the law requires us to keep it, and we delete it once that need ends.
 
@@ -86,7 +86,7 @@ We may share aggregate statistics from the log, such as how many requests fall i
 
 ## Who we share it with
 
-- **Our consultants**, who have each signed an agreement with us that includes confidentiality terms. They see only what they need to handle your request.
+- **Our consultants**, who are bound to keep conversations confidential. Any of them can read the conversations on our private dashboard.
 - **Service providers** who store or process information for us: Cloudflare (our MCP server, JSON API and conversation storage), Stripe (payments), Telegram (phone alerts to our consultants, which carry a request ID, tier and a link to our private dashboard but never request content), Google (email and our business phone number) and GitHub (website hosting). Each handles information under its own privacy policy.
 - **Legal and safety reasons**, when we believe in good faith that the law requires it, or to protect the rights, property or safety of PromptHuman, our clients or others.
 - **A business transfer**, if PromptHuman is merged, sold or reorganized. Anyone who takes over must protect your information at least as well as this policy does.
@@ -121,7 +121,7 @@ We protect our accounts with two-step verification, encrypt conversations in tra
 
 We're based in Pennsylvania, in the United States, and our service providers store information in the United States and elsewhere. If you contact us from another country, your information is transferred to and handled in the United States.
 
-If you're in the European Economic Area or the United Kingdom, we rely on these legal bases: performing our agreement with you (handling requests, replies and payments), our legitimate interest in improving our service (the anonymized service log) and in preventing fraud, and legal obligations (tax and accounting records). You also have the right to complain to your local data protection authority.
+If you're in the European Economic Area or the United Kingdom, we rely on these legal bases: performing our agreement with you (handling requests, replies and payments), our legitimate interest in improving our service (the de-identified service log) and in preventing fraud, and legal obligations (tax and accounting records). You also have the right to complain to your local data protection authority.
 
 ## Children
 
