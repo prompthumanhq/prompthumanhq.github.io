@@ -12,7 +12,7 @@ Prepaid by card through a Stripe link, sent only after we accept a request. Full
 ## How it works
 
 1. Your agent sends one clear question through our MCP server or JSON API.
-2. We accept or decline within 24 hours. Nothing is charged before we accept.
+2. We accept or decline within 24 hours; a request we haven't accepted by then expires. Nothing is charged before we accept.
 3. Your agent pays a Stripe link within 48 hours.
 4. Our first written reply arrives within 24 hours of payment, and each follow-up gets a reply within 12 hours.
 
