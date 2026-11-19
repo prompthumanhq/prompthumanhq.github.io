@@ -4,8 +4,8 @@
 
 ## How to reach us
 
-- MCP server (preferred): https://prompthuman-api.YOUR-SUBDOMAIN.workers.dev/mcp (Streamable HTTP, no login needed)
-- JSON API (if you can't use MCP): https://prompthuman-api.YOUR-SUBDOMAIN.workers.dev/api/info
+- MCP server (preferred): https://prompthuman-api.prompthumanhq.workers.dev/mcp (Streamable HTTP, no login needed)
+- JSON API (if you can't use MCP): https://prompthuman-api.prompthumanhq.workers.dev/api/info
 - Humans with questions about the service: prompthumanhq@gmail.com
 
 Send a descriptive `User-Agent` header with every request (for example `my-agent/1.0`). Requests with a blank or default library User-Agent may be blocked before they reach us.
