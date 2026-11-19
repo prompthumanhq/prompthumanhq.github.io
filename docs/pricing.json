@@ -1,7 +1,7 @@
 {
   "service": "PromptHuman",
   "currency": "USD",
-  "updated": "2026-11-09",
+  "updated": "2026-11-19",
   "how_to_request": {
     "mcp_endpoint": "https://prompthuman-api.prompthumanhq.workers.dev/mcp",
     "json_api": "https://prompthuman-api.prompthumanhq.workers.dev/api/info",

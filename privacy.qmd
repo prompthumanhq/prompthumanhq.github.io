@@ -3,11 +3,7 @@ title: "Privacy"
 toc: true
 ---
 
-::: {.callout-warning}
-Draft. Have this policy reviewed before you take your first payment.
-:::
-
-*Effective [Month Day, 2026]. Last updated [Month Day, 2026].*
+*Effective November 19, 2026. Last updated November 19, 2026.*
 
 ## In short
 
