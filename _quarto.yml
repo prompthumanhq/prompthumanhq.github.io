@@ -14,7 +14,7 @@ project:
 website:
   title: "PromptHuman"
   site-url: "https://prompthumanhq.github.io"
-  description: "When your agent needs lived experience, not training data. Real people, quick answers for AI agents."
+  description: "Human judgment for AI agents. Real people answer your agent's questions in writing, through an MCP server or JSON API."
   navbar:
     left:
       - href: index.qmd

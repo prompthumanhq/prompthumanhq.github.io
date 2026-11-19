@@ -3,50 +3,50 @@ title: "Privacy"
 toc: true
 ---
 
-::: {.callout-warning}
-Draft. Have this policy reviewed before you take your first payment.
-:::
-
-*Effective [Month Day, 2026]. Last updated [Month Day, 2026].*
+*Effective November 19, 2026. Last updated November 19, 2026.*
 
 ## In short
 
-- We collect what we need to answer requests, hold sessions, write transcripts and take payment.
-- Raw requests and transcripts are kept separately, seen only by us and our consultants, and deleted 30 days after the request is completed or declined.
-- For the long term, we keep only an anonymized service log: a short, cleaned-up summary of each question with no names, contact details or company names, plus administrative details such as dates and session type.
+- We collect what we need to answer requests, deliver written replies and take payment.
+- Conversations (requests, follow-ups and our replies) are kept separately, read by us and our consultants, and deleted 90 days after the conversation closes.
+- For the long term, we keep only a de-identified service log: a short summary, in our own words, of each question we accept, with no names, contact details or company names, plus administrative details such as dates and tier, and a client code that links one payer's requests without recording who they are.
 - We never log the content of out-of-scope requests.
-- We don't sell your information, show ads, or use your requests or transcripts to train AI models.
-- Questions or deletion requests: [prompthumanhq@gmail.com](mailto:prompthumanhq@gmail.com).
+- We don't sell your information, show ads, or use your conversations to train AI models.
+- Questions or deletion requests: [prompthumanhq@gmail.com](mailto:prompthumanhq@gmail.com). Send a deletion request from the email address you paid with.
 
 ## Who this covers
 
-PromptHuman ("we", "us") connects AI agents with real people for short, paid question-and-answer sessions. This policy explains how we handle personal information across everything we do: our website, the requests we receive, the sessions we hold, the transcripts we write and the payments we take.
+PromptHuman ("we", "us") connects AI agents with real people for short, paid questions answered in writing. This policy explains how we handle personal information across everything we do: our website, our MCP server and JSON API, the requests we receive, the replies we write and the payments we take.
 
 "You" means the operator of the requesting agent (the person or company that runs it), including when the agent contacts us on your behalf. We treat requests from an agent as coming from its operator. This policy works alongside our [Terms](terms.qmd), including their confidentiality section. Where the two differ, the one that gives your information more protection applies.
 
 ## What we collect
 
-**Requests and correspondence.** When an agent or operator emails us, we receive the sending email address, the request and anything attached to it, and any later messages in the thread.
+**Requests and conversations.** Agents submit requests only through our MCP server or JSON API. We receive the question, any background, the tier chosen, follow-up messages, and technical details needed to run the service, such as when each message arrived. An agent may also tell us its own name, your name and a contact email address; all three are optional. We write replies that we return to your agent through the same channel.
 
-**Sessions and transcripts.** We receive what is said during a session, and we write a transcript that we send to you.
+**Optional details about the agent.** An agent may also tell us, by choosing from fixed lists, whether it works for a company or an individual, what platform it runs on, and how it found us. It may add a short note in its own words. All of these are optional, and we ask agents to answer only from what they already know. The three fixed-list answers go into the service log described below. The note stays with the conversation and is deleted with it.
 
-**Payments.** Sessions are paid by card through Stripe. Through Stripe we receive your email address, your name or business name if you provide one, your billing country and postal code, the request reference you enter at checkout, and the amount and status of the payment. We never see or store full card numbers.
+**Internet addresses.** To limit abuse, our server keeps a scrambled fingerprint of the internet (IP) address each new request comes from, and uses it only to cap how many requests one address can send per hour. The fingerprint can't be turned back into the address, we never store the address itself, and the fingerprint is erased about a day after the request. Cloudflare, as our host, also keeps short-lived technical logs of requests to our server (not their content) under [Cloudflare's privacy policy](https://www.cloudflare.com/privacypolicy/).
+
+**Email.** If a person emails us with a question about the service or a refund, we receive the sending email address and the message.
+
+**Payments.** Requests are paid by card through Stripe. Through Stripe we receive your email address, your name or business name if you provide one, your billing country and postal code, the request ID attached to your payment link, whether you ticked the box agreeing to our Terms, and the amount and status of the payment. We never see or store full card numbers; card details are handled by Stripe and never reach us. Our server, hosted by Cloudflare, keeps Stripe's reference for your payment and the dates it was paid or refunded. When a payment is confirmed, our server uses the email address once to work out a client code (see [The service log](#the-service-log)) and does not store the address itself.
 
 **Phone and voicemail.** If you call or text our business number, we receive your number and any message you leave.
 
 **Our website.** Our website is a static site hosted by GitHub Pages. We don't use cookies, analytics or tracking scripts. GitHub, as our host, may log technical information such as visitors' IP addresses for security purposes, under [GitHub's privacy statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
 
-**What we ask you not to send.** As our Terms say, please don't send personal data about your users unless it is essential to the question. Never send government ID numbers, financial account numbers, passwords, health information or information about children. If a request depends on that kind of information, or on financial, medical, legal, tax or engineering advice, we decline it as out of scope.
+**What we ask you not to send.** As our Terms say, never send passwords, API keys, tokens or other credentials; payment card, bank account or government ID numbers; health or medical records; personal information about anyone other than the operator; or information you are not authorised to share. Our server rejects obvious cases automatically, and we may decline or close a request that contains such information and delete it without answering. We also decline requests for legal, medical, tax, financial, investment or engineering advice as out of scope.
 
 ## How we use it
 
 - To decide whether a request is in scope and reply to it.
-- To schedule and hold sessions, and to write and deliver transcripts.
+- To write and deliver replies and follow-up replies.
 - To take payments, issue refunds and keep accounting and tax records.
-- To keep the anonymized service log described below, which we use to improve our service.
+- To keep the de-identified service log described below, which we use to improve our service.
 - To prevent fraud and abuse, enforce our Terms and meet legal obligations.
 
-We don't sell personal information, use it for advertising, or use requests or transcripts to train AI models.
+We don't sell personal information, use it for advertising, or use conversations to train AI models.
 
 ## How we store and delete it
 
@@ -54,38 +54,44 @@ We keep three kinds of records, each stored and kept for a different period.
 
 | Record | What it contains | How long we keep it |
 |---|---|---|
-| Raw records | Original requests, attachments, email threads about a request, session text and transcripts | Deleted 30 days after the request is completed or declined |
-| Payment records | Payment and refund details held by Stripe and in our accounts | As long as tax and accounting law requires [for example, seven years] |
-| Service log | Anonymized summaries and administrative details | Kept indefinitely |
+| Conversations | Requests, background, follow-ups and our replies | Deleted 90 days after the conversation closes |
+| Payment records | Payment and refund details held by Stripe (under its own policies) and in our accounts | As long as tax and accounting law requires (generally up to seven years) |
+| Service log | De-identified summaries and administrative details | Kept indefinitely, unless you ask us to remove your entry |
 
-Raw records are stored separately from the service log, and only we and our consultants can access them. We keep a raw record past 30 days only if we need it to resolve a dispute, refund or chargeback, or if the law requires us to keep it, and we delete it once that need ends.
+Conversations travel over encrypted connections and are stored with our hosting provider, Cloudflare, separately from the service log. They are read by us and our consultants; Cloudflare can technically access what it stores for us. We share them with no one else, except as described under [Who we share it with](#who-we-share-it-with). Our phone notifications about new requests contain a request ID and tier, never request content. We keep a conversation past 90 days only if we need it to resolve a dispute, refund or chargeback, or if the law requires us to keep it, and we delete it once that need ends.
 
-The transcript we send you is yours to keep. Deleting our copy doesn't affect yours.
+When a conversation is deleted, automatically or at your request, it is removed from our live database straight away. Our database provider keeps rolling backups for a short period (currently up to 7 days), so a deleted conversation can remain in a backup for that long before it is gone for good.
+
+Your agent's platform may keep its own copy of the conversation. That copy is your responsibility, and deleting ours doesn't affect it.
 
 ## The service log
 
 To understand what agents need and improve our service, we keep a log of every request. It contains:
 
-- a short summary of the question, written by us, with names, contact details, company names and identifying specifics removed;
-- a request ID and a client code, which let us recognize repeat clients without recording who they are;
-- administrative details, such as how the agent found us, the agent platform, the type of operator (company, individual or unknown), the question category, the session type and price, the dates and times a request was received, reviewed and completed, the session length, payment and refund status, and whether the session changed the agent's next step.
+- for each request we accept, a short summary of the question (up to 40 words), written by one of us in our own words, leaving out names, contact details, company names and identifying specifics. Our server refuses a summary that contains an email address, a web link, a phone number or a phrase copied from the request;
+- a request ID and, for paid requests, a client code. The client code is made by scrambling the email address you paid with, using a secret key that only our server holds. We store the code, never the address. The same address always gives the same code, which lets us recognize repeat clients without recording who they are;
+- administrative details, such as how the agent found us, the agent platform, the type of operator (company, individual or unknown), the question category, the tier and price, the dates and times a request was received, reviewed and answered, the number of replies and words used, payment and refund status, and the agent's feedback on whether our answer was helpful and whether it changed the agent's next step.
 
-The log never contains raw request text, names, email addresses, phone numbers, company names or payment details. If we decline a request as out of scope, the log records only that it was declined and the general reason, such as "medical", never what the request said.
+The log never contains raw request text, names, email addresses, phone numbers, company names or payment details. If we decline a request, the log records only that it was declined and which general reason we chose, such as "out of scope" or "unclear", never what the request said or any note we sent back.
 
-The key that links a client code to a client is held only in our email and payment records, which follow the retention periods above. We may share aggregate statistics from the log, such as how many requests fall into each category, but never in a way that could identify a client or a specific request.
+A client code can't be turned back into an email address. It can be matched to you only by someone who has both our secret key and your email address, which is how we find your records when you ask us to delete them. Because all of one payer's entries carry the same code, those entries are linked to each other.
+
+We and our consultants download copies of the log to study it. Our server keeps a record of every download (who, when and which file), so that if you ask us to remove your entries we can also remove them from those copies.
+
+We may share aggregate statistics from the log, such as how many requests fall into each category, but never in a way that could identify a client or a specific request.
 
 ## Who we share it with
 
-- **Our consultants**, who have each signed an agreement with us that includes confidentiality terms. They see only what they need to handle your request.
-- **Service providers** who store or process information for us: Stripe (payments), Google (email, file storage and our business phone number), GitHub (website hosting) and [session chat tool]. Each handles information under its own privacy policy.
+- **Our consultants**, who are bound to keep conversations confidential. Any of them can read the conversations on our private dashboard.
+- **Service providers** who store or process information for us: Cloudflare (our MCP server, JSON API and conversation storage), Stripe (payments), Telegram (phone alerts to our consultants, which carry a request ID, tier and a link to our private dashboard but never request content), Google (email and our business phone number) and GitHub (website hosting). Each handles information under its own privacy policy.
 - **Legal and safety reasons**, when we believe in good faith that the law requires it, or to protect the rights, property or safety of PromptHuman, our clients or others.
 - **A business transfer**, if PromptHuman is merged, sold or reorganized. Anyone who takes over must protect your information at least as well as this policy does.
 
-We don't share or publish requests or transcripts with anyone else.
+We don't share or publish conversations with anyone else.
 
 ## Information about other people
 
-A request may mention people other than you, such as your users or colleagues. You're responsible for having the right to share their information with us. We treat it the same way as yours: it stays in the raw records, it's deleted after 30 days, and it never enters the service log.
+A request may mention people other than you, such as your users or colleagues. You're responsible for having the right to share their information with us. We treat it the same way as yours: it stays in the conversation record, it's deleted 90 days after the conversation closes, and it never enters the service log.
 
 ## Your choices and rights
 
@@ -93,20 +99,25 @@ You can ask us to:
 
 - tell you what personal information we hold about you and give you a copy;
 - correct information that's wrong;
-- delete your raw records before the 30 days are up;
+- delete your conversations before the 90 days are up;
+- remove the entries for your requests from our service log;
 - stop using your information for a particular purpose.
 
-Email [prompthumanhq@gmail.com](mailto:prompthumanhq@gmail.com) from the address you used with us, or include your request ID so we can confirm the request is yours. We'll respond within 30 days. We may need to keep payment records the law requires us to keep. The service log contains no personal information, so there is nothing in it to hand over or delete.
+Email [prompthumanhq@gmail.com](mailto:prompthumanhq@gmail.com) from the email address you paid with. That address is how we find your records and confirm they are yours. We'll reply to it and ask you to confirm before we delete anything, because deletion can't be undone. If you never paid, or can no longer use the address you paid with, include your conversation ID instead.
+
+Tell us which you want: only your conversations and messages deleted, or your service log entries removed as well. If the address you paid with is shared, for example a company's accounts mailbox, a request from it covers everyone who paid through it. We can't delete a conversation while a refund or a payment on it is still being settled; we'll tell you if that applies and delete it once it is.
+
+We'll respond within 30 days. We may need to keep payment records the law requires us to keep. The service log holds no names, contact details or request text. Its entries are tied to you only through the client code, so we find them from your paying address, or from a conversation ID, and remove them if you ask.
 
 ## Security
 
-We protect our accounts with two-step verification, keep raw records separate from the service log, limit access to us and our consultants, and delete raw records on schedule. No system is perfectly secure. If a breach affects your personal information, we'll notify you as the law requires.
+We protect our accounts with two-step verification, encrypt conversations in transit, keep them separate from the service log, limit access to us and our consultants, and delete them on schedule. No system is perfectly secure. If a breach affects your personal information, we'll notify you as the law requires.
 
 ## International clients
 
 We're based in Pennsylvania, in the United States, and our service providers store information in the United States and elsewhere. If you contact us from another country, your information is transferred to and handled in the United States.
 
-If you're in the European Economic Area or the United Kingdom, we rely on these legal bases: performing our agreement with you (handling requests, sessions and payments), our legitimate interest in improving our service (the anonymized service log) and in preventing fraud, and legal obligations (tax and accounting records). You also have the right to complain to your local data protection authority.
+If you're in the European Economic Area or the United Kingdom, we rely on these legal bases: performing our agreement with you (handling requests, replies and payments), our legitimate interest in improving our service (the de-identified service log) and in preventing fraud, and legal obligations (tax and accounting records). You also have the right to complain to your local data protection authority.
 
 ## Children
 
