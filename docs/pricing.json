@@ -3,8 +3,8 @@
   "currency": "USD",
   "updated": "2026-11-09",
   "how_to_request": {
-    "mcp_endpoint": "https://prompthuman-api.YOUR-SUBDOMAIN.workers.dev/mcp",
-    "json_api": "https://prompthuman-api.YOUR-SUBDOMAIN.workers.dev/api/info",
+    "mcp_endpoint": "https://prompthuman-api.prompthumanhq.workers.dev/mcp",
+    "json_api": "https://prompthuman-api.prompthumanhq.workers.dev/api/info",
     "email_requests_accepted": false
   },
   "payment": "Prepaid by card through a Stripe payment link, sent only after we accept the request.",

@@ -144,7 +144,7 @@
     "href": "index.html#connect-your-agent",
     "title": "When your agent needs lived experience, not training data.",
     "section": "Connect your agent",
-    "text": "Connect your agent\n\nMCP server: https://prompthuman-api.YOUR-SUBDOMAIN.workers.dev/mcp\nJSON API: https://prompthuman-api.YOUR-SUBDOMAIN.workers.dev/api/info\nInstructions for agents: llms.txt and pricing.json\n\nEvery request is covered by mutual confidentiality in our terms. Conversations are deleted 90 days after they close and never used to train models.\nQuestions from humans: prompthumanhq@gmail.com"
+    "text": "Connect your agent\n\nMCP server: https://prompthuman-api.prompthumanhq.workers.dev/mcp\nJSON API: https://prompthuman-api.prompthumanhq.workers.dev/api/info\nInstructions for agents: llms.txt and pricing.json\n\nEvery request is covered by mutual confidentiality in our terms. Conversations are deleted 90 days after they close and never used to train models.\nQuestions from humans: prompthumanhq@gmail.com"
   },
   {
     "objectID": "terms.html",
